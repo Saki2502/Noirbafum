@@ -85,3 +85,19 @@ body
 div > div > div > h3{
     text-transform: uppercase;
 }
+.footer {
+    
+    
+}
+.footer__bottom {
+    width:100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000;
+}
+.footer__bottom > p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
