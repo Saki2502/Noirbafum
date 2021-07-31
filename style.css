@@ -6,52 +6,64 @@ a
 {
     text-decoration: none;
 }
-body
-{
-    background-image: linear-gradient(#F2D5D5,#765959);
-    background-repeat: no-repeat;
-}
-/* i-top */
-#i-top ul
-{
-    margin: 0 10%;
-    width: 80%;
+#i-header{
+    background-color: antiquewhite;
+    padding: 10px;
+    width: 100%;
     display: flex;
-    list-style-type: none;
-    justify-content: center;
-    padding-inline-start: 0px;
-}
-#i-top ul a{
-    border-radius: 2px;
-    background-color: #E6AEAE;
-    color: #4B3939;
-    /* text-decoration: none; */
-    display: block;
-    padding: 5px 30px;
-}
-#i-top ul a:hover
-{
-    background-color: #B88B8B;
-    color: #F2D5D5;
-}
-/* i-logo-area */
-#i-logo-area
-{
-    width: 95%;
-    margin: 0 3%;
-    display: flex;
-    margin-top: 2%;
-    justify-content: space-between;
     height: 100px;
 }
-#i-logo-area div img{
-    height: 100%;
-}
-#i-logo-area a{
-    display: block;
-    padding: 0 5px;
-}
-#i-logo-area a:hover
+#i-list-product
 {
-    color: #F5DDDD;
+    display: block;
+    padding: 10px 20px;
+}
+#i-list-product >div{
+    display: flex;
+    position: relative;
+}
+#i-list-product div div{
+    margin: 0 10px;
+}
+#i-list-product div span + i{
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+}
+#i-right
+{
+    width: 80%;
+}
+#i-searchbox
+{
+    padding: 5px;
+    display: flex;
+}
+#i-searchbox div:first-child{
+    width: 75%;
+}
+#i-searchbox > div{
+    display: flex;
+    margin: 5px;
+}
+#i-searchbox  div span
+{
+    margin: 15px 0px;
+}
+#i-searchbox input
+{
+    height: 30px;
+    border: none;
+    border-bottom: inset;
+    width: 70%;
+}
+#i-searchbox button
+{   height: 28px;
+    width: 25%;
+    border-color: #ddd;
+    cursor: pointer;
+    border: none;
+}
+#i-searchbox button:hover{
+    background-color: #ccc;
 }
