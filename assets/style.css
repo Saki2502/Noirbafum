@@ -9,22 +9,44 @@ a
     text-decoration: none;
 }
 #i-header{
-    background-color: antiquewhite;
+    background-color: #FFE4BD;
     padding: 10px;
     width: 100%;
     display: flex;
     height: 100px;
+    justify-content: space-evenly;
 }
 #i-list-product
 {
     display: block;
     padding: 10px 20px;
 }
+#i-list-product:hover
+{
+    background-color: #FFD597;
+}
+@media screen and (max-width : 1235px) {
+    #i-list-product div div{
+        display: none;
+    }
+}
+@media screen and (max-width : 1425px) {
+    #i-user div p{
+        display: none;
+    }
+}
+@media screen and (max-width : 1150px) {
+    #i-user div div
+    {
+        display: none;
+    }
+}
 #i-list-product >div{
     display: flex;
     position: relative;
 }
 #i-list-product div div{
+    /* display: none; */
     margin: 0 10px;
 }
 #i-list-product div span + i{
@@ -38,11 +60,13 @@ a
 }
 #i-searchbox
 {
+    justify-content: space-around;
     padding: 5px;
     display: flex;
 }
-#i-searchbox div:first-child{
+#i-searchbox >div:first-child{
     width: 75%;
+    justify-content: center;
 }
 #i-logo-area div img{
     width: 138px;
@@ -52,10 +76,6 @@ a
 #i-searchbox > div{
     display: flex;
     margin: 5px;
-}
-#i-searchbox  div span
-{
-    margin: 15px 0px;
 }
 #i-searchbox input
 {
@@ -73,9 +93,24 @@ a
 }
 #i-searchbox button:hover{
     background-color: #ccc;
-    color: #F5DDDD;
+    color: white;
+}
+#i-user > div{
+    display: flex;
+    font-size: 15px;
+    margin: 0 4px;
+}
+#i-user i{
+    font-size: 20px;
+}
+#i-user span{
+    margin: 0 5px;
 }
  
+#i-user a:hover
+{
+    color: #FF9900;
+}
 /*Responsive*/
 .grid {
     width: 100%;
