@@ -166,6 +166,7 @@ a
 .footer__font {
     text-decoration: none;
     color: #4F4F4F;
+    margin: 0;
 }
 .footer-item-icon {
     font-size: 20px;
