@@ -16,6 +16,10 @@ a
     height: 100px;
     justify-content: space-evenly;
 }
+#i-header a
+{
+    color: #4F4F4F;
+}
 #i-list-product
 {
     display: block;
