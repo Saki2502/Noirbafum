@@ -137,16 +137,16 @@ a
 }
 /*Test*/
 .grid_column_3 {
-    margin: auto 1%;
+    margin: 0 1%;
     padding-left: 5px;
     padding-right: 5px;
-    width: 25%;
+    width: 27%;
 }
 .grid_column_1-5 {
-    margin: 0 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 15%;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 12%;
 }
 /*footer*/
 
