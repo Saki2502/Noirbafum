@@ -137,16 +137,16 @@ a
 }
 /*Test*/
 .grid_column_3 {
-    margin-left: 2%;
+    margin: 0 1%;
     padding-left: 5px;
     padding-right: 5px;
-    width: 25%;
+    width: 27%;
 }
 .grid_column_1-5 {
-    margin: 0 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 15%;
+    margin: 0 0.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 12%;
 }
 /*footer*/
 
@@ -170,14 +170,23 @@ a
 .footer__font {
     text-decoration: none;
     color: #4F4F4F;
+    margin: 0;
+    font-size: 1.1rem;
 }
 .footer-item-icon {
-    font-size: 20px;
+    font-size: 23px;
     color: #FF3300;
+    margin-right: 8px;
+}
+.footer-item__info {
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 10px;
+
 }
 .footer-item__link {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #4F4F4F;
     padding: 2px 0;
     display: flex;
