@@ -15,10 +15,15 @@ a
     display: flex;
     height: 100px;
     justify-content: space-evenly;
+    position: fixed;
+    top: 0;
 }
 #i-header a
 {
     color: #4F4F4F;
+}
+#space-top {
+    margin-top: 100px;
 }
 .c-space{
     width: 100%;
@@ -139,6 +144,9 @@ a
     width: 55%;
     display: flex;
     justify-content: center;
+}
+#chimxuongheader {
+    z-index: -1;
 }
 #i-slide >div img{
     width: 100%;
