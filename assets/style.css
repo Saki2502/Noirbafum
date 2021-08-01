@@ -126,6 +126,7 @@ a
     flex-wrap: wrap;
     margin-left: -5px;
     margin-right: -5px;
+    justify-content: center;
 }
 /*Test*/
 .grid_column_3 {
