@@ -167,6 +167,10 @@ a
 .footer-item {
     
 }
+.footer__font {
+    text-decoration: none;
+    color: #4F4F4F;
+}
 .footer-item-icon {
     font-size: 20px;
     color: #FF3300;
