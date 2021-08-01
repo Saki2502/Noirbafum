@@ -34,7 +34,7 @@ a
         display: none;
     }
 }
-@media screen and (max-width : 1475px) {
+@media screen and (max-width : 1480px) {
     #i-user div p{
         display: none;
     }
