@@ -20,6 +20,18 @@ a
 {
     color: #4F4F4F;
 }
+.c-space{
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+.c-space div
+{
+    width: 70%;
+    height: 2px;
+    background-color:#FFAD33;
+}
 #i-list-product
 {
     display: block;
@@ -116,6 +128,57 @@ a
 #i-user a:hover
 {
     color: #FF9900;
+}
+#i-slide
+{
+    display: flex;
+    justify-content: center;
+}
+#i-slide > div{
+    position: relative;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+#i-slide >div img{
+    width: 100%;
+}
+#i-slide div+div
+{
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+#i-left-right
+{
+    justify-content: space-between;
+    bottom: 50%;
+}
+#i-left-right i{
+    font-size: 30px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(54,54,54,0.1);
+    color: #BDBDBD;
+    cursor: pointer;
+}
+#i-left-right i:hover
+{
+    background-color: #4F4F4F;
+    color: wheat;
+}
+#i-sticks{
+    justify-content: center;
+    bottom: 0;
+}
+#i-sticks i{
+    color:rgb(54,54,54,0.3);
+    font-size: 40px;
+    padding: 0 10px;
+}
+#i-sticks i:hover{
+    color:rgb(54,54,54,0.6);
 }
 
 /*Responsive*/
