@@ -267,14 +267,16 @@ a
     color: 	#FF3300;
 }
 .footer__input-group {
-    padding-top: 5px;
-    padding-bottom: 20px;
+    margin-top: 6px;
     height: 30px;
     width: 100%;    
 }
+.footer__input-group input {
+    height: 25px;    
+}
 
 .footer-item-pay {
-    list-style: none;
+    list-style-type: none;
     padding-top: 15px;
 }
 .footer-item-pay li {
