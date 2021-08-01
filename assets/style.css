@@ -113,8 +113,9 @@ a
 }
 /*Responsive*/
 .grid {
-    width: 1200px;
+    width: 1270px;
     max-width: 100%;
+    padding: 0 15px;
     margin: 0 auto; 
 }
 .grid_full_width {
