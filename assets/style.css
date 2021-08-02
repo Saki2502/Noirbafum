@@ -189,60 +189,7 @@ a
 #i-sticks i:hover{
     color:rgb(54,54,54,0.6);
 }
-/*nav*/
-/*#i-header > div:first-child {
-    margin: 0;
-}
-.nav {
-    list-style-type: none;
-    display: flex;
-}
-.nav > li {
-    display: inline-block;
-    position: relative;
-}
-.nav > li > a {
-    text-decoration: none;
-    line-height: 46px;
-    display: inline-block;
-    padding: 0 24px;
-    color: #fff;
-}
-.nav li:hover a{
-    display: block;
-    color: #000;
-    background-color: #ccc;
-}
-.nav li:hover .subnav {
-    display: block;
-}
-*/
-/*subnav header*/
-/*.subnav {
-    list-style-type: none;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    min-width: 160px;
-    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
-}
-.subnav li {
-    display: block;
-}
-.subnav li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    line-height: 22px;
-    padding: 8px 16px;
-}
-.subnav li:hover a {
-    display: block;
-    background-color: #ccc;
-}
-*/
+
 /*Responsive*/
 .grid {
     width: 1270px;
