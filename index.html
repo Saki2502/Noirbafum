@@ -27,34 +27,18 @@
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css" />
     <title>Noir Parfum</title>
   </head>
-  <body>
+  <body onscroll="standingTop()">
     <div id="i-header">
       <!-- header -->
       <img src="assets/images/logo2_uLJ_icon.ico" alt="Noirpafum" />
       <a href="#" id="i-list-product">
         <div>
-          <!--<ul class="nav">
-            <li>-->
-              <i style="font-size: 38px" class="fa">&#xf0c9;</i>
-              <!--subnav-->
-            <!--  <ul class="subnav"> 
-                <li class="">
-                  <a href="" >Nước hoa dành cho nữ</a>
-                </li>
-                <li class="">
-                  <a href="" >Nước hoa dành cho nam</a>
-                </li>
-                <li class="">
-                  <a href="" >Combo khuyến mãi</a>
-                </li>
-              </ul>-->
-              <div>
-                <span>Danh mục</span><br />
-                <span> <b>Sản Phẩm</b></span>
-                <i class="fa">&#xf0dd;</i>
-              </div>
-          <!--  </li>
-          </ul> -->
+          <i style="font-size: 38px" class="fa">&#xf0c9;</i>
+          <div>
+            <span>Danh mục</span><br />
+            <span> <b>Sản Phẩm</b></span>
+            <i class="fa">&#xf0dd;</i>
+          </div>
         </div>
       </a>
       <div id="i-right">
@@ -96,27 +80,24 @@
         </div>
       </div>
     </div>
-    <div class="c-space"><div id="space-top"></div></div>
+    <div class="c-space"><div></div></div>
     <div id="i-slide">
       <!-- cover thong tin -->
-      <div id="chimxuongheader">
+      <div id="i-img">
         <!-- boxslide -->
-        <div>
-          <!-- img -->
-          <img src="assets/images/logo.jpg" alt="###">
-        </div>
         <div id="i-left-right">
           <!-- left -->
-          <i class="fa fa-angle-left"></i>
+          <i class="fa fa-angle-left" onclick="slideChange(-1)"></i>
         <!-- right -->
-        <i class="fa fa-angle-right"></i>
+        <i class="fa fa-angle-right" onclick="slideChange(1)""></i>
         </div>
         <div id="i-sticks">
           <!-- button -->
-          <i class="fas fa-minus"></i>
-          <i class="fas fa-minus"></i>
-          <i class="fas fa-minus"></i>
-          <i class="fas fa-minus"></i>
+          <i id="stick1" class="fas fa-minus" onclick="slideNumber(1)"></i>
+          <i id="stick2" class="fas fa-minus" onclick="slideNumber(2)"></i>
+          <i id="stick3" class="fas fa-minus" onclick="slideNumber(3)"></i>
+          <i id="stick4" class="fas fa-minus" onclick="slideNumber(4)"></i>
+          <i id="stick5" class="fas fa-minus" onclick="slideNumber(5)"></i>
         </div>
         
       </div>
@@ -141,7 +122,7 @@
 
 
 
-        noi dungeon
+        <p id="test">Noidung</p>
 
 
 
@@ -168,12 +149,10 @@
         <div class="grid">
             <div class="grid_row">
                 <div class="grid_column_3">
-                  <!--About us-->
                     <h3 class="footer__heading">Noir Parfum</h3>
                     <p class="footer__font">Nước hoa hoàn thiện sự sang trọng - một chi tiết nhấn mạnh vẻ ngoài một cách tinh tế, một phần bổ sung vô hình hoàn thiện tính cách đàn ông và phụ nữ. Vì vậy hãy đến với chúng tôi, chúng tôi sẽ cho bạn một sự lựa chọn hoàn hảo.</p>
                 </div>
                 <div class="grid_column_3">
-                  <!--Contact -->
                     <h3 class="footer__heading">Thông tin liên hệ</h3>
                     <ul class="footer_list">
                         <li class="footer-item footer-item__info">
@@ -193,7 +172,6 @@
                     </ul>
                 </div>
                 <div class="grid_column_1-5">
-                  <!--Dịch vụ-->
                     <h3 class="footer__heading">Dịch vụ</h3>
                     <ul class="footer_list">
                         <li class="footer-item">
@@ -211,18 +189,15 @@
                     </ul>
                 </div>
                 <div class="grid_column_3">
-                  <!--Nhận tin khuyến mãi-->
                     <h3 class="footer__heading">Đăng ký nhận tin</h3>
                     <p class="footer__font">Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
                     <div class="footer__input-group">
-                      <!--khung ghi email-->
                         <form action="javascript:void(0)">
                             <input type="email" placeholder="Email của bạn" id="register">
                             <input type="submit" value="Đăng ký" onclick="registerCheck();">
                         </form>
                     </div>
                     <div class="footer__payment">
-                      <!--Icon phương thức thanh toán-->
                         <ul class="footer-item-pay">
                             <li">
                                 <img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/visa.svg" alt="Noir Parfum">
@@ -248,5 +223,6 @@
             </div>
         </div>
     </div>
+    <script src="assets/myscript.js"></script>
   </body>
 </html>

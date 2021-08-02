@@ -15,8 +15,7 @@ a
     display: flex;
     height: 100px;
     justify-content: space-evenly;
-    position: fixed;
-    top: 0;
+    
 }
 
 #i-header a
@@ -140,19 +139,17 @@ a
     display: flex;
     justify-content: center;
 }
-#i-slide > div{
+#i-img{
     position: relative;
     width: 55%;
     display: flex;
     justify-content: center;
+    height: 300px;
+    background-image: url("assets/images/slide1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#chimxuongheader {
-    z-index: -1;
-}
-#i-slide >div img{
-    width: 100%;
-}
-#i-slide div+div
+#i-slide div >div
 {
     width: 100%;
     display: flex;
@@ -182,7 +179,7 @@ a
     bottom: 0;
 }
 #i-sticks i{
-    color:rgb(54,54,54,0.3);
+    color:rgb(243,243,243,0.6);
     font-size: 40px;
     padding: 0 10px;
 }
