@@ -1,4 +1,5 @@
 var iSlide = 1;
+document.getElementById("i-img").style.backgroundImage="url(assets/images/slide1.jpg)";
 function standingTop()
 {
     var y = window.scrollY;
