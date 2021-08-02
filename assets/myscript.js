@@ -25,7 +25,7 @@ function slideNumber(i)
 {
     document.getElementById("stick"+iSlide).style.color ="rgb(243,243,243,0.6)";
     iSlide = i;
-    document.getElementById("i-img").style.backgroundImage="url(/assets/images/slide"+iSlide+".jpg)";
+    document.getElementById("i-img").style.backgroundImage="url(assets/images/slide"+iSlide+".jpg)";
     document.getElementById("stick"+i).style.color ="rgb(54,54,54,0.6)";
 }
 // function loopSlide()
