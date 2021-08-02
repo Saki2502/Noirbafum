@@ -83,24 +83,21 @@
     <div class="c-space"><div></div></div>
     <div id="i-slide">
       <!-- cover thong tin -->
-      <div>
+      <div id="i-img">
         <!-- boxslide -->
-        <div>
-          <!-- img -->
-          <img src="assets/images/logo.jpg" alt="###">
-        </div>
         <div id="i-left-right">
           <!-- left -->
-          <i class="fa fa-angle-left"></i>
+          <i class="fa fa-angle-left" onclick="slideChange(-1)"></i>
         <!-- right -->
-        <i class="fa fa-angle-right"></i>
+        <i class="fa fa-angle-right" onclick="slideChange(1)""></i>
         </div>
         <div id="i-sticks">
           <!-- button -->
-          <i class="fas fa-minus"></i>
-          <i class="fas fa-minus"></i>
-          <i class="fas fa-minus"></i>
-          <i class="fas fa-minus"></i>
+          <i id="stick1" class="fas fa-minus" onclick="slideNumber(1)"></i>
+          <i id="stick2" class="fas fa-minus" onclick="slideNumber(2)"></i>
+          <i id="stick3" class="fas fa-minus" onclick="slideNumber(3)"></i>
+          <i id="stick4" class="fas fa-minus" onclick="slideNumber(4)"></i>
+          <i id="stick5" class="fas fa-minus" onclick="slideNumber(5)"></i>
         </div>
         
       </div>
