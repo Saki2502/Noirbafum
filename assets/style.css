@@ -222,6 +222,7 @@ a
 #footer {
     border-top: 4px solid #FA8072;
     padding-top: 45px;
+    background-color: #FFFDF8;
 }
 .footer__heading {
     text-transform: uppercase;
