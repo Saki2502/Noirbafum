@@ -92,6 +92,7 @@ a
     border: none;
     border-bottom: inset;
     width: 75%;
+    font-style: italic;
 }
 #i-searchbox button
 {   height: 28px;
@@ -285,22 +286,39 @@ a
 
 }
 /* Reponsive */
-@media screen and (max-width : 480px) {
+@media only screen and (max-width : 480px) {
     /* mobile */
+    #i-header img{
+        display: none;
+    }
+    #i-right{
+        min-width: 90%;
+    }
+    #i-user{
+       max-width: 20%;
+    }
+    
 }
-@media screen and (max-width : 768px ) {
+@media only screen and (max-width : 768px ) {
     /* ipads */
     #i-right{
         width: 77% !important;
     }
+    /* chua co giai phap */
     #i-list-product div div
     {
         display: none;
     }
-    
+    #i-img
+    {
+        width: 85%;
+    }
+    #i-searchbox input{
+        font-size: 10px;
+    }
 }
 
-@media screen and (max-width : 1024px) {
+@media only screen and (max-width : 1024px) {
     /* small screen */
     
     #i-right{
@@ -315,7 +333,7 @@ a
     }
     
 }
-@media screen and (max-width : 1200px) {
+@media only screen and (max-width : 1200px) {
     /* destop */
     #i-user div p{
         display: none;
