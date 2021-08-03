@@ -1,4 +1,5 @@
 var iSlide = 1;
+loopSlide();
 document.getElementById("i-img").style.backgroundImage="url(assets/images/slide1.jpg)";
 function standingTop()
 {
@@ -29,15 +30,8 @@ function slideNumber(i)
     document.getElementById("i-img").style.backgroundImage="url(assets/images/slide"+iSlide+".jpg)";
     document.getElementById("stick"+i).style.color ="rgb(54,54,54,0.6)";
 }
-// function loopSlide()
-// {
-//     var elm = document.getElementById("i-img");
-//     while (true)
-//     {
-//         elm.style.backgroundImage="url(/assets/images/slide"+iSlide+".jpg)";
-//         iSlide++;
-//         if(iSlide==6) iSlide =1;
-//         setTimeout(1000);
-//     }
-// }
-// loopSlide();
+function loopSlide()
+{
+    slideChange(1);
+    setTimeout(loopSlide,5000);
+}
