@@ -110,14 +110,17 @@ a
     font-size: 15px;
     margin: 0 4px;
 }
+#i-user >div div{
+    margin: 0 10px;
+}
 #i-user i{
     font-size: 20px;
     cursor: pointer;
 }
-
+/* 
 #i-user span,p{
     margin: 0 5px;
-}
+} */
  
 #i-user a:hover
 {
