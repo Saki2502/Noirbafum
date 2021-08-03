@@ -14,7 +14,7 @@ a
     width: 100%;
     display: flex;
     height: 100px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 }
 
@@ -22,6 +22,9 @@ a
 {
     color: #4F4F4F;
 }
+/* #i-header img{
+    width: 8%;
+} */
 #space-top {
     margin-top: 100px;
 }
@@ -40,34 +43,18 @@ a
 #i-list-product
 {
     display: block;
-    padding: 10px 20px;
+    padding: 10px;
 }
 #i-list-product:hover
 {
     background-color: #FFD597;
 }
-@media screen and (max-width : 1235px) {
-    #i-list-product div div{
-        display: none;
-    }
-}
-@media screen and (max-width : 1480px) {
-    #i-user div p{
-        display: none;
-    }
-}
-@media screen and (max-width : 1150px) {
-    #i-user div div
-    {
-        display: none;
-    }
-}
+
 #i-list-product >div{
     display: flex;
     position: relative;
 }
 #i-list-product div div{
-    /* display: none; */
     margin: 0 10px;
 }
 #i-list-product div span + i{
@@ -75,18 +62,17 @@ a
     bottom: 5px;
     right: 0px;
 }
-#i-right
-{
-    width: 80%;
+#i-right{
+    width: 75%;
 }
 #i-searchbox
 {
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 5px;
     display: flex;
 }
 #i-searchbox >div:first-child{
-    width: 75%;
+    width: 65%;
     justify-content: center;
 }
 #i-logo-area div img{
@@ -97,13 +83,15 @@ a
 #i-searchbox > div{
     display: flex;
     margin: 5px;
+    width: 33%;
+    justify-content: center;
 }
 #i-searchbox input
 {
     height: 30px;
     border: none;
     border-bottom: inset;
-    width: 70%;
+    width: 75%;
 }
 #i-searchbox button
 {   height: 28px;
@@ -350,3 +338,41 @@ a
 .footer__heading {
 
 }
+/* Reponsive */
+@media screen and (max-width : 480px) {
+    /* mobile */
+}
+@media screen and (max-width : 768px ) {
+    /* ipads */
+    #i-right{
+        width: 77% !important;
+    }
+    #i-list-product div div
+    {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width : 1024px) {
+    /* small screen */
+    
+    #i-right{
+        width: 70%;
+    }
+    #i-user span
+    {
+        display: none;
+    }
+    #i-searchbox >div:first-child{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width : 1200px) {
+    /* destop */
+    #i-user div p{
+        display: none;
+    }
+}
+/* more than that: TV */
