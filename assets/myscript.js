@@ -35,3 +35,4 @@ function loopSlide()
     slideChange(1);
     setTimeout(loopSlide,5000);
 }
+

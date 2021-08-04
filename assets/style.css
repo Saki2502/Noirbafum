@@ -44,6 +44,7 @@ a
 {
     display: block;
     padding: 10px;
+    border-radius: 10px;
 }
 #i-list-product:hover
 {
@@ -116,6 +117,13 @@ a
 #i-user i{
     font-size: 20px;
     cursor: pointer;
+    display: block;
+    padding: 5px;
+    border-radius: 40%;
+}
+#i-user i:hover
+{
+    background-color: #FFD597;
 }
 /* 
 #i-user span,p{
@@ -137,7 +145,7 @@ a
     display: flex;
     justify-content: center;
     height: 300px;
-    background-image: url("assets/images/slide1.jpg");
+    /* background-image: url("assets/images/slide1.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -178,7 +186,50 @@ a
 #i-sticks i:hover{
     color:rgb(54,54,54,0.6);
 }
-
+.c-product-slide{
+    width: 90%;
+    height: 300px;
+    margin: 50px 5%;
+    display: flex;
+    justify-content: flex-start;
+    /* border: solid 2px wheat; */
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.c-product-box{
+    width: 20%;
+    height: 95%;
+    padding: 10px 10px 0px;
+    justify-content: space-between;
+    border: groove 2px #FFE4BD;
+    overflow: hidden;
+    margin: 10px 25px;
+}
+.c-product-box div{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.c-img-product{
+    height: 60%;
+    justify-content: center;
+    overflow: hidden;
+}
+.c-product-box img{
+    width: 100%;
+}
+.c-product-box div+div{
+    height: 35%;
+    justify-content: flex-end;
+}
+.c-product-box p{
+    margin: 5px 0;
+}
+.c-price-product{
+    color: gold;
+}
 /*Responsive*/
 .grid {
     width: 1270px;
@@ -318,6 +369,10 @@ a
     }
     #i-searchbox input{
         font-size: 10px;
+    }
+    #i-left-right
+    {  
+        display: none !important;
     }
 }
 
