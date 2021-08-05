@@ -1,4 +1,4 @@
-/* ipads 786*/
+/* ipads 768*/
 #i-right {
   width: 77% !important;
 }
@@ -14,4 +14,7 @@
 }
 #i-left-right {
   display: none !important;
+}
+.c-product-box{
+  width: 20%;
 }
