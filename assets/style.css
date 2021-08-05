@@ -186,10 +186,17 @@ a
 #i-sticks i:hover{
     color:rgb(54,54,54,0.6);
 }
+#i-content{
+    overflow: auto;
+    width: 86%;
+    margin: 0 7%;
+}
+#i-content::-webkit-scrollbar{
+    display: none;
+}
 .c-product-slide{
-    width: 90%;
+    width: 125%;
     height: 300px;
-    margin: 50px 5%;
     display: flex;
     justify-content: flex-start;
     /* border: solid 2px wheat; */
@@ -198,7 +205,7 @@ a
     overflow: hidden;
 }
 .c-product-box{
-    width: 20%;
+    width: 15%;
     height: 95%;
     padding: 10px 10px 0px;
     justify-content: space-between;
@@ -340,57 +347,10 @@ a
 
 }
 /* Reponsive */
-@media only screen and (max-width : 480px) {
-    /* mobile */
-    #i-header img{
-        display: none;
-    }
-    #i-right{
-        min-width: 90%;
-    }
-    #i-user{
-       max-width: 20%;
-    }
-    
-}
-@media only screen and (max-width : 768px ) {
-    /* ipads */
-    #i-right{
-        width: 77% !important;
-    }
-    /* chua co giai phap */
-    #i-list-product div div
-    {
-        display: none;
-    }
-    #i-img
-    {
-        width: 85%;
-    }
-    #i-searchbox input{
-        font-size: 10px;
-    }
-    #i-left-right
-    {  
-        display: none !important;
-    }
-}
 
-@media only screen and (max-width : 1024px) {
-    /* small screen */
-    
-    #i-right{
-        width: 70%;
-    }
-    #i-user span
-    {
-        display: none;
-    }
-    #i-searchbox >div:first-child{
-        width: 80%;
-    }
-    
-}
+
+
+
 @media only screen and (max-width : 1200px) {
     /* destop */
     #i-user div p{

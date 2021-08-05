@@ -1,0 +1,11 @@
+/* mobile 480 */
+#i-header img {
+  display: none;
+}
+#i-right {
+  /* width: 90% !important; */
+  min-width: 90%;
+}
+#i-user {
+  max-width: 20%;
+}
