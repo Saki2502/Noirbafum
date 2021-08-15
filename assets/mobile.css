@@ -10,5 +10,8 @@
   max-width: 20%;
 }
 .c-product-box{
-  width: 29% !important;
+  /* max-width: 150px; */
+}
+.c-product-slide{
+  height: 150px;
 }

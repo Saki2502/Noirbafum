@@ -1,5 +1,6 @@
 var iSlide = 1;
 loopSlide();
+// getxy();
 document.getElementById("i-img").style.backgroundImage =
   "url(assets/images/slide1.jpg)";
 function standingTop() {
@@ -32,4 +33,10 @@ function slideNumber(i) {
 function loopSlide() {
   slideChange(1);
   setTimeout(loopSlide, 5000);
+}
+function scrollSlide(i){
+  var elmt = document.getElementById("i-box-slide");
+  elmt.scrollBy(i,0);
+  // var x = elmt.scrollLeft;
+  // document.getElementById("test").innerHTML = "0x =" + x;
 }

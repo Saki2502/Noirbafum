@@ -12,9 +12,9 @@
 #i-searchbox input {
   font-size: 10px;
 }
-#i-left-right {
+.i-left-right {
   display: none !important;
 }
 .c-product-box{
-  width: 20%;
+  width: 250px !important;
 }
