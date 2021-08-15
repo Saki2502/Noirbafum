@@ -1,0 +1,20 @@
+/* ipads 768*/
+#i-right {
+  width: 77% !important;
+}
+/* chua co giai phap */
+#i-list-product div div {
+  display: none;
+}
+#i-img {
+  width: 85%;
+}
+#i-searchbox input {
+  font-size: 10px;
+}
+.i-left-right {
+  display: none !important;
+}
+.c-product-box{
+  width: 250px !important;
+}

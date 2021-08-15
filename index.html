@@ -2,20 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="shortcut icon"
-      href="assets/images/ico_C1W_icon.ico"
-      style="border-radius: 50%"
     />
     <link rel="stylesheet" href="assets/style.css" />
     <link
@@ -27,10 +18,34 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css" />
-    <title>Noir Parfum</title>
-    <meta name="description" content="Shop nước hoa Noir Parfum"/>
-    <meta name="author" content="Anh Quang & Tuyết Nhi"/>
+    <link
+      rel="stylesheet"
+      href="assets/mobile.css"
+      media="only screen and (max-width : 480px)"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/ipad.css"
+      media="only screen and (max-width : 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/small.css"
+      media="only screen and (max-width : 1024px)"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="assets/images/ico_C1W_icon.ico"
+      style="border-radius: 50%"
+    />
 
+    <title>Noir Parfum</title>
+    <meta name="description" content="Shop nước hoa Noir Parfum" />
+    <meta name="author" content="Anh Quang & Tuyết Nhi" />
   </head>
   <body onscroll="standingTop()">
     <div id="i-header">
@@ -80,7 +95,7 @@
           </div>
         </div>
         <div>
-          <span><i>Mua hàng theo sở thích của bạn</i></span>
+          <span><i id="test">Mua hàng theo sở thích của bạn</i></span>
           <!-- bot infor -->
         </div>
       </div>
@@ -90,11 +105,11 @@
       <!-- cover thong tin -->
       <div id="i-img">
         <!-- boxslide -->
-        <div id="i-left-right">
+        <div class="i-left-right">
           <!-- left -->
           <i class="fa fa-angle-left" onclick="slideChange(-1)"></i>
-        <!-- right -->
-        <i class="fa fa-angle-right" onclick="slideChange(1)""></i>
+          <!-- right -->
+          <i class="fa fa-angle-right" onclick="slideChange(1)"></i>
         </div>
         <div id="i-sticks">
           <!-- button -->
@@ -104,13 +119,289 @@
           <i id="stick4" class="fas fa-minus" onclick="slideNumber(4)"></i>
           <i id="stick5" class="fas fa-minus" onclick="slideNumber(5)"></i>
         </div>
-        
       </div>
-
     </div>
     <div class="c-space"><div></div></div>
-    <div>
-      
+    <div class="c-content">
+      <p>Nuoc hoa nu</p>
+      <div class="c-box-slide" id="i-woman">
+        <div class="c-product-slide">
+          <!-- 1 khung list san pham,  flex -->
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/ico_C1W_icon.ico" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/ico1_b17_icon.ico" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="i-left-right">
+        <i class="fa fa-angle-double-left" onclick="scrollSlide(-200,'woman')" ></i>
+        <!-- right -->
+        <i class="fa fa-angle-double-right" onclick="scrollSlide(200,'woman')"></i>
+      </div>
+      <a href="#" class="c-more">Xem them <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <div class="c-space"><div></div></div>
+    <div class="c-content">
+      <p>Nuoc hoa nam</p>
+      <div class="c-box-slide" id="i-man">
+        <div class="c-product-slide">
+          <!-- 1 khung list san pham,  flex -->
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/ico_C1W_icon.ico" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/ico1_b17_icon.ico" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="i-left-right">
+        <i class="fa fa-angle-double-left" onclick="scrollSlide(-200,'man')" ></i>
+        <!-- right -->
+        <i class="fa fa-angle-double-right" onclick="scrollSlide(200,'man')"></i>
+      </div>
+      <a href="#" class="c-more">Xem them <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <div class="c-space"><div></div></div>
+    <div class="c-content">
+      <p>San pham hot</p>
+      <div class="c-box-slide" id="i-hot">
+        <div class="c-product-slide">
+          <!-- 1 khung list san pham,  flex -->
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/ico_C1W_icon.ico" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/ico1_b17_icon.ico" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+          <div class="c-product-box">
+            <!-- 1 o chua thong tin san pham,  flex -->
+            <div class="c-img-product">
+              <!-- img -->
+              <img src="assets/images/shopping-img.jpg" alt="san pham" />
+            </div>
+            <div>
+              <p class="c-name-product">Hoa hong</p>
+              <p class="c-price-product">
+                1230 <i><b>vnđ</b></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="i-left-right">
+        <i class="fa fa-angle-double-left" onclick="scrollSlide(-200,'hot')" ></i>
+        <!-- right -->
+        <i class="fa fa-angle-double-right" onclick="scrollSlide(200,'hot')"></i>
+      </div>
+      <a href="#" class="c-more">Xem them <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    <div class="c-space"><div></div></div>
+    <!-- <div>
       <pre>
 
 
@@ -145,10 +436,8 @@
 
 
       </pre>
-    </div>
-    <div>
-      <!-- thuong hieu tro xuong -->
-    </div>
+    </div> -->
+
     <!-- footer -->
     <div id="footer">
       <div class="flex-container">
