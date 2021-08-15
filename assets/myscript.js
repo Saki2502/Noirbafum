@@ -34,9 +34,9 @@ function loopSlide() {
   slideChange(1);
   setTimeout(loopSlide, 5000);
 }
-function scrollSlide(i){
-  var elmt = document.getElementById("i-box-slide");
+function scrollSlide(i, str){
+  var elmt = document.getElementById("i-"+str);
   elmt.scrollBy(i,0);
   // var x = elmt.scrollLeft;
-  // document.getElementById("test").innerHTML = "0x =" + x;
+  // document.getElementById("t"+"est").innerHTML ="hello";
 }

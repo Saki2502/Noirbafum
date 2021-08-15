@@ -157,6 +157,7 @@ a
 }
 .i-left-right
 {
+    /* width: 95%; */
     justify-content: space-between;
     bottom: 45%;
 }
@@ -220,10 +221,10 @@ a
     display: none;
 }
 .c-content .i-left-right{
-    bottom: 0;
+    bottom: 5%;
 }
 .c-content .i-left-right i{
-    padding: 30px;
+    /* padding: 30px; */
     font-size: 45px;
     background-color: unset;
 }
