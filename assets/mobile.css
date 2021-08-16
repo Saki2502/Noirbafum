@@ -10,10 +10,10 @@
   max-width: 20%;
 }
 .c-product-box{
-  /* max-width: 150px; */
+  max-width: 160px;
 }
 .c-product-slide{
-  height: 150px;
+  height: 200px !important;
 }
 #i-searchbox span{
   display: none;

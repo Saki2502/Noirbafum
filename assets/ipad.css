@@ -16,5 +16,9 @@
   display: none !important;
 }
 .c-product-box{
-  width: 250px !important;
+  width: 200px !important;
+}
+.c-product-slide{
+  height: 250px;
+  width: 1500px;
 }

@@ -32,6 +32,8 @@ function addProWoman(){
   addAnother_Woman("assets/images/shopping-img.jpg",150,"Hoa Oai Huong");
   addAnother_Woman("assets/images/ico_C1W_icon.ico",110,"Hoa Hong");
   addAnother_Woman("assets/images/shopping-img.jpg",160,"Hoa Oai Huong");
+  addAnother_Woman("assets/images/shopping-img.jpg",196,"Hoa Dao");
+  addAnother_Woman("assets/images/shopping-img.jpg",169,"Hoa Huong Duong");
 }
 addProWoman();
 function addProMan(){
