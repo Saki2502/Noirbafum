@@ -1,0 +1,83 @@
+body{
+    background-image: url(assets/images/nen.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+.layout_container{
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.5)
+}
+.form-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.signin_form{
+    padding: 0 64px;
+}
+.form-input{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 0 13px;
+    font-size: 1.4rem;
+    border: 2px solid #537b35;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    outline: none;
+}
+.input-icon{
+    position:absolute;
+    cursor: pointer;
+}
+.create-forgot{
+    justify-self: space-between;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+    width: 100%;
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+.create-forgot label{
+    position: relative;
+}
+.create-forgot span{
+    position: absolute;
+}
+.create-forgot a{
+    float: right;
+    text-decoration: none;
+}
+.create-forgot a:hover{
+    color: #537b35;
+}
+.signin-button{
+    width: 100%;
+}
+.signin-button .btn{
+    font-size: 1.5rem;
+    margin-bottom: 26px;
+    padding: 10px 65px;
+    color: #fff;
+    background-color: #537b35;
+    border: none;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    outline: none;
+    cursor: pointer;
+}
