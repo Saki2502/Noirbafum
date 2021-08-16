@@ -407,7 +407,13 @@ hr{
     visibility: visible;
     opacity: 1;
 }
-#backtop a {
+#backtop i {
     text-decoration: none;
     color: #FF3300;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
