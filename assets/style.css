@@ -280,7 +280,7 @@ a
 }
 /*Responsive*/
 .footer_container {
-    width: 1140px;
+    width: 1200px;
     max-width: 100%;
     padding: 0 15px;
     margin: 0 auto; 
@@ -289,7 +289,7 @@ a
 .footer-row {
     display: flex;
     margin: 0 -15px;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     flex-basis: auto;
 }
@@ -371,6 +371,9 @@ a
     display: inline-block;
     line-height: 40px;
     margin-left: 0px;
+}
+hr{
+    margin-top: 2rem;
 }
 .footer__bottom {
     width:100%;
