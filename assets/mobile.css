@@ -15,3 +15,6 @@
 .c-product-slide{
   height: 150px;
 }
+#i-searchbox span{
+  display: none;
+}
