@@ -291,6 +291,7 @@ a
     margin: 0 -15px;
     flex-wrap: wrap;
     justify-content: center;
+    flex-basis: auto;
 }
 /*Test*/
 .flex-item_1 {
