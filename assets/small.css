@@ -12,6 +12,9 @@
 #i-log{
   flex-direction: column;
 }
+#i-log div{
+  display: block;
+}
 .c-product-box{
   width: 225px;
 }

@@ -137,7 +137,10 @@ a
     margin: 0 5px;
 } */
  
-#i-log{
+/* #i-log{
+    display: flex;
+} */
+#i-log div{
     display: flex;
 }
 #i-user a:hover

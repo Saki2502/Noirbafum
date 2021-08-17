@@ -25,6 +25,9 @@
 #i-log{
   display: none;
 }
+#i-log div{
+  display: block;
+}
 #i-user >div{
     display: block;
 }
