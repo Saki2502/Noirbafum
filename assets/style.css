@@ -71,6 +71,7 @@ a
     justify-content: space-between;
     padding: 5px;
     display: flex;
+    height: 60px;
 }
 #i-searchbox >div:first-child{
     width: 65%;
@@ -85,7 +86,7 @@ a
     display: flex;
     margin: 5px;
     width: 33%;
-    justify-content: center;
+    justify-content: flex-end;
 }
 #i-searchbox input
 {
@@ -110,9 +111,12 @@ a
     display: flex;
     font-size: 15px;
     margin: 0 4px;
+    /* width: 50%; */
 }
-#i-user >div div{
-    margin: 0 10px;
+
+#i-user a{
+    display: block;
+    padding: 3px;
 }
 #i-user i{
     font-size: 20px;
@@ -120,16 +124,22 @@ a
     display: block;
     padding: 5px;
     border-radius: 40%;
+    height: fit-content;
+    width: fit-content;
 }
 #i-user i:hover
 {
     background-color: #FFD597;
 }
+
 /* 
 #i-user span,p{
     margin: 0 5px;
 } */
  
+#i-log{
+    display: flex;
+}
 #i-user a:hover
 {
     color: #FF9900;
@@ -397,9 +407,9 @@ hr{
 
 @media only screen and (max-width : 1200px) {
     /* destop */
-    #i-user div p{
+    /* #i-user div p{
         display: none;
-    }
+    } */
 }
 /* more than that: TV */
 #backtop {
