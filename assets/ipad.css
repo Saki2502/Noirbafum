@@ -38,4 +38,18 @@
 #i-market{
   display: block !important;
 }
+.footer-row{
+  flex-flow: column wrap;
+}
+.flex-item_1,.flex-item_2{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.footer-item__info{
+  display: block;
+}
+.footer-item__link{
+  display: block;
+}
 
