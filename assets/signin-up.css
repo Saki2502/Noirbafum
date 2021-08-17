@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Quicksand', sans-serif;
-    
+    font-size: 100%;
     text-align: center;
     font: inherit;
     vertical-align: baseline;
@@ -17,10 +17,12 @@ body{
     color: #fff;
 }
 .layout_container{
-    width: 500px;
+    width: 100%;
+    max-width : 480px;
+    min-height: 455px;
     margin: 0 auto;
     padding: 30px;
-    background: rgba(0,0,0,0.5) no-repeat center;
+    background: rgba(0,0,0,0.5);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -37,6 +39,12 @@ body{
     -ms-border-radius: 22px;
     -o-border-radius: 22px;
 }
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 .logo_form{
     text-align: center;
     margin-bottom: 1.6rem;
@@ -51,6 +59,7 @@ body{
 }
 .authen_form{
     padding: 0 32px;
+    position: relative;
 }
 .form-input{
     height: 50px;
@@ -148,13 +157,6 @@ hr {
     background-color: #dd4b39;
 }
 
-.signup{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
 .accept-condition{
     text-align: center;
     position: relative;
@@ -168,23 +170,4 @@ label.checkbox{
 }
 .btn2{
     cursor: not-allowed;
-}
-
-@media screen and (max-width : 1280px) {
-    /* destop */
-    .authen_form{
-        width: 38%;
-    }
-}
-@media screen and (max-width : 375px) {
-    /* mobile */
-    .authen_form{
-        width: 80%;
-    }
-}
-@media screen and (max-width : 768px) {
-    /* ipad */
-    .authen_form{
-        width: 61%;
-    }
 }
