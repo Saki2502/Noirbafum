@@ -3,11 +3,14 @@
 #i-right {
   width: 70%;
 }
-#i-user span {
-  display: none;
-}
 #i-searchbox > div:first-child {
   width: 80%;
+}
+#i-user i+div>a{
+  display: none;
+}
+#i-log{
+  flex-direction: column;
 }
 .c-product-box{
   width: 225px;
