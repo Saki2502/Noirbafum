@@ -1,32 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
+    font-family: 'Quicksand', sans-serif;
     background-image: url(assets/images/nen.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     text-align: center;
+    height: 100%;
 }
 .layout_container{
     width: 500px;
     margin: 0 auto;
     padding: 30px;
-    background: rgba(0,0,0,0.5)
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+.logo_form{
+    text-align: center;
+    margin-bottom: 1.6rem;
 }
 .form-header{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
     cursor: pointer;
 }
-.signin_form{
-    padding: 0 64px;
+.authen_form{
+    padding: 0 32px;
 }
 .form-input{
     height: 50px;
     width: 100%;
-    margin-bottom: 26px;
-    padding: 0 13px;
+    margin-top: 22px;
+    padding: 0 10px;
     font-size: 1.4rem;
     border: 2px solid #537b35;
     border-radius:10px;
@@ -40,37 +53,34 @@ body{
     position:absolute;
     cursor: pointer;
 }
+
 .create-forgot{
     justify-self: space-between;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: inline-block;
     text-align: left;
-    padding-left: 10px;
     width: 100%;
-    margin-bottom: 45px;
-    margin-top: 10px;
+    margin-bottom: 24px;
+    margin-top: 8px;
 }
-.create-forgot label{
-    position: relative;
-}
-.create-forgot span{
-    position: absolute;
-}
+
 .create-forgot a{
-    float: right;
     text-decoration: none;
     color: #000;
 }
 .create-forgot a:hover{
     color: #537b35;
 }
-.signin-button{
+.create-forgot .register{
+    float: right;
+}
+.login-button{
     width: 100%;
 }
-.signin-button .btn{
+.login-button .btn{
     font-size: 1.5rem;
-    margin-bottom: 26px;
-    padding: 10px 65px;
+    margin-bottom: 35px;
+    padding: 10px 150px;
     color: #fff;
     background-color: #537b35;
     border: none;
@@ -80,5 +90,60 @@ body{
     -ms-border-radius:10px;
     -o-border-radius:10px;
     outline: none;
+}
+.btn1{
     cursor: pointer;
+}
+hr {
+    margin-bottom: 15px;
+}
+.form_socials{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-icon{
+    font-size: 1.2rem;
+    padding: 10px 36px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-icon-facebook{
+    background-color: #3a5a98;
+    color: #fff;
+}
+.icon-facebook{
+    color: #fff;
+}
+.form_socials span{
+    margin-left: 12px;
+}
+.icon-google{
+    color: #FF1A00;
+}
+.btn-icon-google{
+    color: #606266;
+    background-color: #fdfdfd;
+}
+
+.signup{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.accept-condition{
+    text-align: center;
+    position: relative;
+}
+label.checkbox{
+    display: block;
+    text-align: left;
+}
+.accept-condition span{
+    position: absolute;
+}
+.btn2{
+    cursor: not-allowed;
 }

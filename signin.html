@@ -12,67 +12,54 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Shop nước hoa Noir Parfum" />
-    <meta name="author" content="Anh Quang & Tuyết Nhi" />
-    <link href="images/logo2_uLJ_icon.ico" rel="shortcut icon" />
-  </head>
-  <body>
-    <div class="layout_container">
-      <div class="form-header">
-        <h2>SIGN IN</h2>
-      </div>
-      <div class="form">
-        <!--Đăng nhập-->
-        <div class="signin_form">
-          <form action="#" method="post">
-            <div class="group">
-              <input
-                class="form-input"
-                type="text"
-                name="username"
-                placeholder="Username"
-                required
-              />
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Shop nước hoa Noir Parfum"/>
+        <meta name="author" content="Anh Quang & Tuyết Nhi"/>
+        <link href="images/logo2_uLJ_icon.ico" rel="shortcut icon"/>
+    </head>
+    <body>
+        <div class="layout_container">
+            <div class="logo_form">
+                <img src="assets/images/logo_login.png" alt="Noir Parfum">
             </div>
-            <div class="group">
-              <input
-                class="form-input"
-                type="password"
-                name="password"
-                placeholder="Password"
-                required
-              />
-              <!--<i class="far fa-eye input-icon" aria-hidden="true"  type="button" id="eye"></i>
-                        <i class="far fa-eye-slash input-icon" aria-hidden="true" type="button" id="eye" display="none"></i>
-                        -->
+            <div class="form-header">
+                <h3>SIGN IN</h3>
             </div>
-            <div class="create-forgot">
-              <input type="checkbox" id="rememberme" value />
-              <label for="rememberme">
-                <span></span>
-                Remember me
-              </label>
-              <a href="#">Forgot password?</a>
+            <div class="form">
+                <!--Đăng nhập-->
+                <div class="authen_form">
+                    <form action="#" method="post">
+                        <div class="group">
+                            <input class="form-input" type="text" name="username" placeholder="Username" required>
+                        </div>
+                        <div class="group">
+                            <input class="form-input" type="password" name="password" placeholder="Password" required>
+                            <!--<i class="far fa-eye input-icon" aria-hidden="true"  type="button" id="eye"></i>
+                            <i class="far fa-eye-slash input-icon" aria-hidden="true" type="button" id="eye" display="none"></i>
+                            -->
+                        </div>
+                        <div class="create-forgot">
+                            <a href="#">Forgot password?</a>
+                            <a class="register" href="#">Register new account</a>
+                        </div>
+                        <div class="login-button">
+                            <button class="btn btn1">Sign In</button>
+                        </div>
+                        <hr>
+                        <div class="form_socials">
+                            <button type="button" class="btn-icon btn-icon-facebook">
+                                <i class="icon-facebook fab fa-facebook-square"></i>
+                                <span>Facebook</span>
+                            </button>
+                            <button type="button" class="btn-icon btn-icon-google">
+                                <i class="icon-google fab fa-google-plus-g"></i>
+                                <span>Google</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="signin-button">
-              <button class="btn">Sign In</button>
-            </div>
-            <div class="">
-              <span>Register new account</span>
-            </div>
-            <div class="form_socials">
-              <a href="#" class="btn btn-icon">
-                <i class="fab fa-facebook-square"></i>
-                Facebook
-              </a>
-              <a href="#" class="btn btn-icon">
-                <i class="fab fa-google-plus-square"></i>
-                Google+
-              </a>
-            </div>
-          </form>
         </div>
       </div>
     </div>
