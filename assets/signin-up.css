@@ -170,21 +170,21 @@ label.checkbox{
     cursor: not-allowed;
 }
 
-@media only screen and (max-width : 1280px) {
+@media screen and (max-width : 1280px) {
     /* destop */
     .authen_form{
         width: 38%;
     }
 }
-@media only screen and (max-width : 1366px) {
-    /*  */
+@media screen and (max-width : 375px) {
+    /* mobile */
     .authen_form{
-        width: 35%;
+        width: 80%;
     }
 }
-@media only screen and (max-width : 1440px) {
-    /* destop */
+@media screen and (max-width : 768px) {
+    /* ipad */
     .authen_form{
-        width: 33%;
+        width: 61%;
     }
 }
