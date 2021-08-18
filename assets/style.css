@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 a
 {
     text-decoration: none;
@@ -420,8 +423,13 @@ hr{
     right: 25px;
     bottom: 30px;
     position: fixed;
-    visibility: visible;
-    opacity: 1;
+    /*visibility: visible;
+    */opacity: 1;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 #backtop i {
     text-decoration: none;
