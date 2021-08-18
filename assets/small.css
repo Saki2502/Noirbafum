@@ -6,15 +6,16 @@
 #i-searchbox > div:first-child {
   width: 80%;
 }
-#i-user i+div>a{
-  display: none;
-}
-#i-log{
+
+#i-log div{
   flex-direction: column;
 }
-#i-log div{
-  display: block;
+#i-log >a,#i-market{
+  display: none;
 }
+/* #i-log div{
+  display: block;
+} */
 .c-product-box{
   width: 225px;
 }

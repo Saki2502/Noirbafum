@@ -115,7 +115,7 @@ a
 }
 
 #i-user a{
-    display: block;
+    /* display: block; */
     padding: 3px;
 }
 #i-user i{

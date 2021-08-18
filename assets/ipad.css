@@ -26,18 +26,13 @@
   display: none;
 }
 
-#i-user >div{
-    display: block;
-}
 #i-user i+div{
   display: none;
 }
-#i-user >div:hover >div{
+/* #i-user >div:hover >div{
   display: block;
-}
-#i-market{
-  display: block !important;
-}
+} */
+
 .footer-row{
   flex-flow: column wrap;
 }
