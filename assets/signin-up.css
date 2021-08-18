@@ -100,9 +100,13 @@ input {
 }
 .login-button {
   width: 100%;
+  white-space: nowrap;
+  display: flex;
 }
 .login-button span {
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .login-button .btn {
   font-size: 1.5rem;
@@ -117,6 +121,9 @@ input {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   outline: none;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
 .btn1 {
   cursor: pointer;
@@ -191,9 +198,11 @@ label.checkbox {
   .layout_container {
     width: 100%;
     height: 100%;
-  }
-  .logo_form img {
-    width: 362px;
+    border-radius: inherit;
+    -webkit-border-radius: in;
+    -moz-border-radius: in;
+    -ms-border-radius: in;
+    -o-border-radius: in;
   }
   .socials {
     display: flex;
@@ -203,10 +212,11 @@ label.checkbox {
     list-style: none;
   }
   .login-button .btn {
-    padding: 10px 100px;
+    padding: 10px 65px;
   }
   .btn-icon,
-  .btn {
+  .btn,
+  .logo_form img {
     flex-wrap: wrap;
     flex-basis: 100%;
     text-align: center;
