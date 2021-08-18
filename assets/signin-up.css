@@ -101,10 +101,13 @@ input {
 .login-button {
   width: 100%;
 }
+.login-button span {
+  width: 100%;
+}
 .login-button .btn {
   font-size: 1.5rem;
   margin-bottom: 35px;
-  padding: 10px 150px;
+  padding: 10px 138px;
   color: #fff;
   background-color: #537b35;
   border: none;
@@ -178,9 +181,6 @@ label.checkbox {
 }
 /*tablet*/
 @media (min-width: 740px) and (max-width: 1023px) {
-  .layout_container {
-    max-width: 476px;
-  }
   .logo_form {
     width: 232px;
     height: 56px;
@@ -192,6 +192,9 @@ label.checkbox {
     width: 100%;
     height: 100%;
   }
+  .logo_form img {
+    width: 362px;
+  }
   .socials {
     display: flex;
     justify-content: space-between;
@@ -199,7 +202,11 @@ label.checkbox {
     align-items: center;
     list-style: none;
   }
-  .btn-icon {
+  .login-button .btn {
+    padding: 10px 100px;
+  }
+  .btn-icon,
+  .btn {
     flex-wrap: wrap;
     flex-basis: 100%;
     text-align: center;
