@@ -1,3 +1,34 @@
+$(function () {
+  $(window).scroll(function(){
+    if($("html,body").scrollTop()>90){
+      $("#i-header").css({
+        "position":"fixed"
+        ,"top":"0"
+        ,"z-index":"1"
+        ,"display":"none"
+      });
+      $("#i-header").slideDown(1000);
+    }else{
+      $("#i-header").css({
+        "position":"static"
+        // ,"top":"0"
+        // ,"z-index":"1"
+        ,"display":"flex"
+      });
+    }
+  });
+});
+// function standingTop() {
+//   var y = window.scrollY;
+//   var elm = document.getElementById("i-header");
+//   if (y >= 96) {
+//     elm.style.position = "fixed";
+//     elm.style.top = "0";
+//     elm.style.zIndex = "1";
+//   } else {
+//     elm.style.position = "static";
+//   }
+// }
 var iSlide = 1;
 var img_woman = new Array();
 var price_woman = new Array();
@@ -10,7 +41,6 @@ var price_hot = new Array();
 var name_hot = new Array();
 
 loopSlide();
-
 function addAnother_Woman(img, price, name) {
   img_woman.push(img);
   price_woman.push(price);
@@ -99,20 +129,10 @@ addProductHot();
 // getxy();
 document.getElementById("i-img").style.backgroundImage =
   "url(assets/images/slide1.jpg)";
-function standingTop() {
-  var y = window.scrollY;
-  var elm = document.getElementById("i-header");
-  if (y >= 96) {
-    elm.style.position = "fixed";
-    elm.style.top = "0";
-    elm.style.zIndex = "1";
-  } else {
-    elm.style.position = "static";
-  }
-}
+
 function slideChange(i) {
   document.getElementById("stick" + iSlide).style.color =
-    "rgb(243,243,243,0.6)";
+"rgb(243,243,243,0.6)";
   iSlide += i;
   if (iSlide == 6) iSlide = 1;
   if (iSlide == 0) iSlide = 5;
