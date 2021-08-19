@@ -76,9 +76,11 @@ function addProMan() {
 addProMan();
 function addProHot() {
   addAnother_Hot("assets/images/540eau.jpg", 278, "Maison Francis Kurkdjian Baccarat Rouge 540");
+  addAnother_Hot("assets/images/goodgirl.jpg", 107, "Very Good Girl Eau de Parfum");
   addAnother_Hot("assets/images/tamdao.jpg", 161, "Diptyque Tam Dao");
   addAnother_Hot("assets/images/doson.jpg", 161, "Diptyque Do Son");
   addAnother_Hot("assets/images/replica.jpg", 135, "REPLICA Jazz Club");
+  addAnother_Hot("assets/images/repvibe.jpg", 135, "REPLICA Autumn Vibes");
 }
 addProHot();
 function addProductWoman() {
