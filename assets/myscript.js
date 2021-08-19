@@ -75,7 +75,7 @@ function addProMan() {
 }
 addProMan();
 function addProHot() {
-  addAnother_Hot("assets/images/540eau.jpg", 278, " 𝐌𝐚𝐢𝐬𝐨𝐧 𝐅𝐫𝐚𝐧𝐜𝐢𝐬 𝐊𝐮𝐫𝐤𝐝𝐣𝐢𝐚𝐧 𝐁𝐚𝐜𝐜𝐚𝐫𝐚𝐭 𝐑𝐨𝐮𝐠𝐞 𝟓𝟒𝟎");
+  addAnother_Hot("assets/images/540eau.jpg", 278, "Maison Francis Kurkdjian Baccarat Rouge 540");
   addAnother_Hot("assets/images/tamdao.jpg", 161, "Diptyque Tam Dao");
   addAnother_Hot("assets/images/doson.jpg", 161, "Diptyque Do Son");
   addAnother_Hot("assets/images/replica.jpg", 135, "REPLICA Jazz Club");
@@ -86,7 +86,7 @@ function addProductWoman() {
   for (i = 0; i < img_woman.length; i++) {
     elm.innerHTML =
       elm.innerHTML +
-      '<div class="c-product-box"><div class="c-img-product"><img src=' +
+      '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">NEW</div><img src=' +
       img_woman[i] +
       ' alt="san pham" /></div><div><p class="c-name-product">' +
       name_woman[i] +
@@ -116,7 +116,7 @@ function addProductHot() {
   for (i = 0; i < img_hot.length; i++) {
     elm.innerHTML =
       elm.innerHTML +
-      '<div class="c-product-box"><div class="c-img-product"><img src=' +
+      '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">HOT</div><img src=' +
       img_hot[i] +
       ' alt="san pham" /></div><div><p class="c-name-product">' +
       name_hot[i] +

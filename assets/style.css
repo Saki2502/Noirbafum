@@ -271,11 +271,34 @@ a
     overflow: hidden;
     margin: 10px 50px;
     margin-left: 0px;
+    position: relative;
 }
+.c-product-box:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+.c-product-new{
+    position: absolute;
+    padding: 5px;
+    border: 0;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #f05123;
+    animation: flash infinite 2s;
+    -webkit-animation: flash infinite 2s;
+}
+.c-product-new::before{
+    content: " ";
+    top: 0;right: 0;
+    width: 0; height: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+
 .c-product-box div{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
 }
 .c-img-product{
