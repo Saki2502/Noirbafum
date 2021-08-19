@@ -425,7 +425,6 @@ hr{
     position: fixed;
     /*visibility: visible;
     */opacity: 1;
-    transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;
