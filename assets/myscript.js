@@ -28,12 +28,12 @@ function addAnother_Hot(img, price, name) {
 }
 // noi them san pham
 function addProWoman() {
-  addAnother_Woman("assets/images/ico_C1W_icon.ico", 120, "Hoa Hong");
-  addAnother_Woman("assets/images/shopping-img.jpg", 150, "Hoa Oai Huong");
-  addAnother_Woman("assets/images/ico_C1W_icon.ico", 110, "Hoa Hong");
-  addAnother_Woman("assets/images/shopping-img.jpg", 160, "Hoa Oai Huong");
-  addAnother_Woman("assets/images/shopping-img.jpg", 196, "Hoa Dao");
-  addAnother_Woman("assets/images/shopping-img.jpg", 169, "Hoa Huong Duong");
+  addAnother_Woman("assets/images/BlackOpium.jpg", 130, "Black Opium");
+  addAnother_Woman("assets/images/versace.jpg", 99, "Versace Bright Crystal");
+  addAnother_Woman("assets/images/si.jpg", 128, "Sì Eau de Parfum");
+  addAnother_Woman("assets/images/MissDior.jpg", 138, "Miss Dior Blooming");
+  addAnother_Woman("assets/images/lancome.jpg", 117, "Lancôme Trésor");
+  addAnother_Woman("assets/images/cocochanel.jpg", 145, "Coco Chanel");
 }
 addProWoman();
 function addProMan() {
@@ -57,7 +57,7 @@ function addProductWoman() {
       name_woman[i] +
       '</p><p class="c-price-product">' +
       price_woman[i] +
-      "<i><b>vnđ</b></i></p></div></div>";
+      "<i><b>$</b></i></p></div></div>";
   }
 }
 addProductWoman();
