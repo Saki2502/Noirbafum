@@ -68,6 +68,7 @@ function addProWoman() {
 addProWoman();
 function addProMan() {
   addAnother_Man("assets/images/212.jpg", 104, "212 Men Carolina Herrera");
+  addAnother_Man("assets/images/paco.jpg", 100, "Phantom Eau de Toilette");
   addAnother_Man("assets/images/gio.jpg", 195, "Acqua Di Gio Profumo");
   addAnother_Man("assets/images/sauvage.jpg", 128, "Sauvage Eau de Parfum");
   addAnother_Man("assets/images/bvlgariman.jpg", 113, "BVLGARI Man In Black");
