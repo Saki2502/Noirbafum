@@ -37,13 +37,18 @@ function addProWoman() {
 }
 addProWoman();
 function addProMan() {
-  addAnother_Man("assets/images/ico_C1W_icon.ico", 120, "Hoa Hong");
-  addAnother_Man("assets/images/shopping-img.jpg", 150, "Hoa Oai Huong");
+  addAnother_Man("assets/images/212.jpg", 104, "212 Men Carolina Herrera");
+  addAnother_Man("assets/images/gio.jpg", 195, "Acqua Di Gio Profumo");
+  addAnother_Man("assets/images/sauvage.jpg", 128, "Sauvage Eau de Parfum");
+  addAnother_Man("assets/images/bvlgariman.jpg", 113, "BVLGARI Man In Black");
+  addAnother_Man("assets/images/bleuchanel.jpg", 128, "Bleu de Chanel");
 }
 addProMan();
 function addProHot() {
-  addAnother_Hot("assets/images/ico_C1W_icon.ico", 120, "Hoa Hong");
-  addAnother_Hot("assets/images/shopping-img.jpg", 150, "Hoa Oai Huong");
+  addAnother_Hot("assets/images/540eau.jpg", 278, " 𝐌𝐚𝐢𝐬𝐨𝐧 𝐅𝐫𝐚𝐧𝐜𝐢𝐬 𝐊𝐮𝐫𝐤𝐝𝐣𝐢𝐚𝐧 𝐁𝐚𝐜𝐜𝐚𝐫𝐚𝐭 𝐑𝐨𝐮𝐠𝐞 𝟓𝟒𝟎");
+  addAnother_Hot("assets/images/tamdao.jpg", 161, "Diptyque Tam Dao");
+  addAnother_Hot("assets/images/doson.jpg", 161, "Diptyque Do Son");
+  addAnother_Hot("assets/images/replica.jpg", 135, "REPLICA Jazz Club");
 }
 addProHot();
 function addProductWoman() {
@@ -72,7 +77,7 @@ function addProductMan() {
       name_man[i] +
       '</p><p class="c-price-product">' +
       price_man[i] +
-      "<i><b>vnđ</b></i></p></div></div>";
+      "<i><b>$</b></i></p></div></div>";
   }
 }
 addProductMan();
@@ -87,7 +92,7 @@ function addProductHot() {
       name_hot[i] +
       '</p><p class="c-price-product">' +
       price_hot[i] +
-      "<i><b>vnđ</b></i></p></div></div>";
+      "<i><b>$</b></i></p></div></div>";
   }
 }
 addProductHot();
