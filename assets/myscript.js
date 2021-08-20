@@ -86,6 +86,7 @@ $(function () {
         // ,"display":"none"
       });
       if (!isSideDown) {
+        $("#i-slogan").css("display","none");
         $("#i-header").css("display", "none");
         isSideDown = true;
         $("#i-header").slideDown(500);
@@ -98,6 +99,7 @@ $(function () {
         // ,"z-index":"1"
         display: "flex",
       });
+      $("#i-slogan").css("display","block");
     }
   });
   for (i = 0; i < 10; i++) {
