@@ -1,30 +1,3 @@
-$(function () {
-  var isSideDown = false;
-  $(window).scroll(function () {
-    if ($("html,body").scrollTop() > 80) {
-      $("this").scrollTop(100);
-      $("#i-header").css({
-        position: "fixed",
-        top: "0",
-        "z-index": "1",
-        // ,"display":"none"
-      });
-      if (!isSideDown) {
-        $("#i-header").css("display", "none");
-        isSideDown = true;
-        $("#i-header").slideDown(500);
-      }
-    } else if ($("html,body").scrollTop() == 0) {
-      isSideDown = false;
-      $("#i-header").css({
-        position: "static",
-        // ,"top":"0"
-        // ,"z-index":"1"
-        display: "flex",
-      });
-    }
-  });
-});
 // function standingTop() {
 //   var y = window.scrollY;
 //   var elm = document.getElementById("i-header");
@@ -36,6 +9,7 @@ $(function () {
 //     elm.style.position = "static";
 //   }
 // }
+
 var iSlide = 1;
 var img_woman = new Array();
 var price_woman = new Array();
@@ -47,7 +21,7 @@ var img_hot = new Array();
 var price_hot = new Array();
 var name_hot = new Array();
 
-loopSlide();
+
 function addAnother_Woman(img, price, name) {
   img_woman.push(img);
   price_woman.push(price);
@@ -63,6 +37,7 @@ function addAnother_Hot(img, price, name) {
   price_hot.push(price);
   name_hot.push(name);
 }
+
 // noi them san pham
 function addProWoman() {
   addAnother_Woman("assets/images/BlackOpium.jpg", 130, "Black Opium");
@@ -99,6 +74,38 @@ function addProHot() {
   addAnother_Hot("assets/images/repvibe.jpg", 135, "REPLICA Autumn Vibes");
 }
 addProHot();
+$(function () {
+  var isSideDown = false;
+  $(window).scroll(function () {
+    if ($("html,body").scrollTop() > 80) {
+      // $("this").scrollTop(100);
+      $("#i-header").css({
+        position: "fixed",
+        top: "0",
+        "z-index": "1",
+        // ,"display":"none"
+      });
+      if (!isSideDown) {
+        $("#i-header").css("display", "none");
+        isSideDown = true;
+        $("#i-header").slideDown(500);
+      }
+    } else if ($("html,body").scrollTop() == 0) {
+      isSideDown = false;
+      $("#i-header").css({
+        position: "static",
+        // ,"top":"0"
+        // ,"z-index":"1"
+        display: "flex",
+      });
+    }
+  });
+  for (i = 0; i < 10; i++) {
+    $(".c-list").append(
+      '<div class="c-pro-items"><div class="c-item-img"></div><div class="c-item-info"><div class="c-item-name">Tran dan</div><div class="c-item-price">300d</div></div></div>'
+    );
+  }
+});
 function addProductWoman() {
   var elm = document.getElementById("product_woman");
   for (i = 0; i < img_woman.length; i++) {
@@ -168,6 +175,7 @@ function loopSlide() {
   slideChange(1);
   setTimeout(loopSlide, 5000);
 }
+loopSlide();
 function scrollSlide(i, str) {
   var elmt = document.getElementById("slide_" + str);
   elmt.scrollBy(i, 0);

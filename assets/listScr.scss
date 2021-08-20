@@ -6,7 +6,7 @@
 }
 .c-box-list{
     width: 100%;
-    height: 300px;
+    // height: 300px;
     display: flex;
 }
 .c-select{
@@ -54,6 +54,8 @@
     height: 100%;
     background-color: cadetblue;
     margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
     .c-pro-items{
         background-color: aliceblue;
         height: 250px;
