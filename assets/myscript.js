@@ -1,14 +1,24 @@
 $(function () {
+  var isSideDown = false;
   $(window).scroll(function(){
-    if($("html,body").scrollTop()>90){
+    
+    if($("html,body").scrollTop()>80){
+      $("this").scrollTop(100);
       $("#i-header").css({
         "position":"fixed"
         ,"top":"0"
         ,"z-index":"1"
-        ,"display":"none"
+        // ,"display":"none"
       });
-      $("#i-header").slideDown(1000);
-    }else{
+      if(!isSideDown)
+      {
+        $("#i-header").css("display", "none");
+        isSideDown = true;
+        $("#i-header").slideDown(500);
+      }
+      
+    }else if($("html,body").scrollTop()==0){
+      isSideDown = false;
       $("#i-header").css({
         "position":"static"
         // ,"top":"0"
