@@ -9,6 +9,9 @@
 #i-user {
   max-width: 20%;
 }
+#i-user a{
+  padding: 0px;
+}
 .c-product-box{
   max-width: 160px;
 }

@@ -7,9 +7,9 @@
   width: 80%;
 }
 
-/* #i-log div{
+#i-log div{
   flex-direction: column;
-} */
+}
 #i-log >a,#i-market{
   display: none;
 }

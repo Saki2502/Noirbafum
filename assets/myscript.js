@@ -80,9 +80,10 @@ $(function () {
     if ($("html,body").scrollTop() > 80) {
       // $("this").scrollTop(100);
       $("#i-header").css({
-        position: "fixed",
-        top: "0",
-        "z-index": "1",
+        "position": "fixed"
+        ,"top": "0"
+        ,"z-index": "1"
+        ,"height" : "60"
         // ,"display":"none"
       });
       if (!isSideDown) {
@@ -94,10 +95,11 @@ $(function () {
     } else if ($("html,body").scrollTop() == 0) {
       isSideDown = false;
       $("#i-header").css({
-        position: "static",
+        "position": "static"
         // ,"top":"0"
         // ,"z-index":"1"
-        display: "flex",
+        ,"display": "flex"
+        ,"height" : "95"
       });
       $("#i-slogan").css("display","block");
     }

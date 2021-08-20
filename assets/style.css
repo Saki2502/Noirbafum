@@ -18,7 +18,9 @@ a {
   height: 95px;
   justify-content: space-between;
 }
-
+#i-header img{
+  height: 90px;
+}
 #i-header a {
   color: #4f4f4f;
 }
@@ -134,13 +136,16 @@ a {
 #i-user > div {
   display: flex;
   font-size: 15px;
-  margin: 0 4px;
+  /* margin: 0 4px; */
   /* width: 50%; */
+}
+#i-user >div:first-child{
+  width: fit-content;
 }
 
 #i-user a {
   /* display: block; */
-  padding: 3px;
+  padding: 0px 5px;
 }
 #i-user i {
   font-size: 20px;
@@ -165,13 +170,12 @@ a {
 } */
 #i-log div {
   display: flex;
-  flex-direction:column;
 }
 #i-user a:hover {
   color: #ff9900;
 }
-#i-user >div:last-child div{
-  margin: 10px 0px;
+#i-user >div> div{
+  margin: 5px 0px;
 }
 #i-slide {
   display: flex;
