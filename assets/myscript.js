@@ -1,29 +1,26 @@
 $(function () {
   var isSideDown = false;
-  $(window).scroll(function(){
-    
-    if($("html,body").scrollTop()>80){
+  $(window).scroll(function () {
+    if ($("html,body").scrollTop() > 80) {
       $("this").scrollTop(100);
       $("#i-header").css({
-        "position":"fixed"
-        ,"top":"0"
-        ,"z-index":"1"
+        position: "fixed",
+        top: "0",
+        "z-index": "1",
         // ,"display":"none"
       });
-      if(!isSideDown)
-      {
+      if (!isSideDown) {
         $("#i-header").css("display", "none");
         isSideDown = true;
         $("#i-header").slideDown(500);
       }
-      
-    }else if($("html,body").scrollTop()==0){
+    } else if ($("html,body").scrollTop() == 0) {
       isSideDown = false;
       $("#i-header").css({
-        "position":"static"
+        position: "static",
         // ,"top":"0"
         // ,"z-index":"1"
-        ,"display":"flex"
+        display: "flex",
       });
     }
   });
@@ -78,6 +75,7 @@ function addProWoman() {
 addProWoman();
 function addProMan() {
   addAnother_Man("assets/images/212.jpg", 104, "212 Men Carolina Herrera");
+  addAnother_Man("assets/images/paco.jpg", 100, "Phantom Eau de Toilette");
   addAnother_Man("assets/images/gio.jpg", 195, "Acqua Di Gio Profumo");
   addAnother_Man("assets/images/sauvage.jpg", 128, "Sauvage Eau de Parfum");
   addAnother_Man("assets/images/bvlgariman.jpg", 113, "BVLGARI Man In Black");
@@ -85,10 +83,20 @@ function addProMan() {
 }
 addProMan();
 function addProHot() {
-  addAnother_Hot("assets/images/540eau.jpg", 278, " 𝐌𝐚𝐢𝐬𝐨𝐧 𝐅𝐫𝐚𝐧𝐜𝐢𝐬 𝐊𝐮𝐫𝐤𝐝𝐣𝐢𝐚𝐧 𝐁𝐚𝐜𝐜𝐚𝐫𝐚𝐭 𝐑𝐨𝐮𝐠𝐞 𝟓𝟒𝟎");
+  addAnother_Hot(
+    "assets/images/540eau.jpg",
+    278,
+    "Maison Francis Kurkdjian Baccarat Rouge 540"
+  );
+  addAnother_Hot(
+    "assets/images/goodgirl.jpg",
+    107,
+    "Very Good Girl Eau de Parfum"
+  );
   addAnother_Hot("assets/images/tamdao.jpg", 161, "Diptyque Tam Dao");
   addAnother_Hot("assets/images/doson.jpg", 161, "Diptyque Do Son");
   addAnother_Hot("assets/images/replica.jpg", 135, "REPLICA Jazz Club");
+  addAnother_Hot("assets/images/repvibe.jpg", 135, "REPLICA Autumn Vibes");
 }
 addProHot();
 function addProductWoman() {
@@ -96,7 +104,7 @@ function addProductWoman() {
   for (i = 0; i < img_woman.length; i++) {
     elm.innerHTML =
       elm.innerHTML +
-      '<div class="c-product-box"><div class="c-img-product"><img src=' +
+      '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">NEW</div><img src=' +
       img_woman[i] +
       ' alt="san pham" /></div><div><p class="c-name-product">' +
       name_woman[i] +
@@ -126,7 +134,7 @@ function addProductHot() {
   for (i = 0; i < img_hot.length; i++) {
     elm.innerHTML =
       elm.innerHTML +
-      '<div class="c-product-box"><div class="c-img-product"><img src=' +
+      '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">HOT</div><img src=' +
       img_hot[i] +
       ' alt="san pham" /></div><div><p class="c-name-product">' +
       name_hot[i] +
@@ -142,7 +150,7 @@ document.getElementById("i-img").style.backgroundImage =
 
 function slideChange(i) {
   document.getElementById("stick" + iSlide).style.color =
-"rgb(243,243,243,0.6)";
+    "rgb(243,243,243,0.6)";
   iSlide += i;
   if (iSlide == 6) iSlide = 1;
   if (iSlide == 0) iSlide = 5;
