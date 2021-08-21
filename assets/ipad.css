@@ -6,8 +6,9 @@
 #i-list-product div div {
   display: none;
 }
-#i-img {
+#i-img-box {
   width: 85%;
+  height: 300px;
 }
 #i-searchbox input {
   font-size: 10px;

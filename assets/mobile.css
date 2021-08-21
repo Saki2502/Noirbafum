@@ -24,3 +24,6 @@
 #i-user >div:first-child:hover + div{
   display: none;
 }
+#i-img-box{
+  max-height: 200px;
+}
