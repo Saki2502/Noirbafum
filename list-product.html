@@ -33,17 +33,25 @@
       href="assets/small.css"
       media="only screen and (max-width : 1024px)"
     />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
     <link
       rel="shortcut icon"
-      href="assets/images/ico_C1W_icon.ico"
-      style="border-radius: 50%"
+      href="assets/images/logo-header.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="assets/listScr.css">
+
     <title>Noir Parfum</title>
     <meta name="description" content="Shop nước hoa Noir Parfum" />
     <meta name="author" content="Anh Quang & Tuyết Nhi" />
@@ -54,16 +62,24 @@
       <a href="index.html">
         <img src="assets/images/logo-header.png" alt="Noirparfum" />
       </a>
-      <a href="#" id="i-list-product">
-        <div>
-          <i style="font-size: 38px" class="fa">&#xf0c9;</i>
+      
+      <div class="dropdown">
+        <a href="#" id="i-list-product">
           <div>
-            <span>Danh mục</span><br />
-            <span> <b>Sản Phẩm</b></span>
-            <i class="fa">&#xf0dd;</i>
+            <i style="font-size: 38px" class="fa">&#xf0c9;</i>
+            <div>
+              <span>Danh mục</span><br />
+              <span> <b>Sản Phẩm</b></span>
+              <i class="fa">&#xf0dd;</i>
+            </div>
           </div>
+        </a>
+        <div class="dropdown-content">
+          <a href="#">Nước hoa nữ</a>
+          <a href="#">Nước hoa nam</a>
+          <a href="#">Sản phẩm hot</a>
         </div>
-      </a>
+      </div>
       <div id="i-right">
         <!-- right -->
         <div id="i-searchbox">
@@ -85,59 +101,58 @@
                   <a href="signin.html">Đăng nhập</a>
                   <a href="signup.html">Đăng ký</a>
                 </div>
-                <a href="#">Tài Khoản</a>
               </div>
             </div>
             <div>
               <!-- market -->
               <a href="#"><i class="fa fa-cart-plus"></i></a>
-              
+
               <div><a id="i-market" href="#">Giỏ hàng</a></div>
             </div>
           </div>
         </div>
         <div>
-          <span><i id="test">Mua hàng theo sở thích của bạn</i></span>
+          <span><i id="i-slogan">Mua hàng theo sở thích của bạn</i></span>
           <!-- bot infor -->
         </div>
       </div>
     </div>
     <div class="c-space"><div></div></div>
     <div class="c-box-list">
-        <div class="c-select">
-          <ul>
-            <li>Thuong hieu
-              <ul id="i-company">
-                <li><input type="radio" name="company">Shalimar</li>
-                <li><input type="radio" name="company">L'air du Temps</li>
-                <li><input type="radio" name="company">Classique</li>
-                <li><input type="radio" name="company">Opium</li>
-              </ul>
-            </li>
-            <li>Dung tich
-              <ul>
-                <li><input type="radio" name="size-ml">0.17 FL OZ (5 ml)</li>
-                <li><input type="radio" name="size-ml">0.2 FL OZ (7 ml)</li>
-                <li><input type="radio" name="size-ml">0.5 FL OZ (15ml)</li>
-                <li><input type="radio" name="size-ml">1.0 FL OZ (30 ml)</li>
-              </ul>
-            </li>
-            <li>Muc gia
-              <input type="text" id="i-price">.000 vnd
-            </li>
-            <li><div id="i-submit">tim kiem</div></li>
-          </ul>
-        </div>
-        <div class="c-list">
-          <div class="c-pro-items">
-            <div class="c-item-img"></div>
-            <div class="c-item-info">
-              <div class="c-item-name">Tran dan</div>
-              <div class="c-item-price">300d</div>
-            </div>
+      <div class="c-select">
+        <ul>
+          <li>
+            Thuong hieu
+            <ul id="i-company">
+              <li><input type="radio" name="company" />Shalimar</li>
+              <li><input type="radio" name="company" />L'air du Temps</li>
+              <li><input type="radio" name="company" />Classique</li>
+              <li><input type="radio" name="company" />Opium</li>
+            </ul>
+          </li>
+          <li>
+            Dung tich
+            <ul>
+              <li><input type="radio" name="size-ml" />0.17 FL OZ (5 ml)</li>
+              <li><input type="radio" name="size-ml" />0.2 FL OZ (7 ml)</li>
+              <li><input type="radio" name="size-ml" />0.5 FL OZ (15ml)</li>
+              <li><input type="radio" name="size-ml" />1.0 FL OZ (30 ml)</li>
+            </ul>
+          </li>
+          <li>Muc gia <input type="text" id="i-price" />.000 vnd</li>
+          <li><div id="i-submit">tim kiem</div></li>
+        </ul>
+      </div>
+      <div class="c-list">
+        <div class="c-pro-items">
+          <div class="c-item-img"></div>
+          <div class="c-item-info">
+            <div class="c-item-name">Tran dan</div>
+            <div class="c-item-price">300d</div>
           </div>
         </div>
-        <div class="c-info"></div>
+      </div>
+      <div class="c-info"></div>
     </div>
     <div>
       <pre>
@@ -299,6 +314,5 @@
       </div>
     </div>
   </body>
-  <script src="assets/myscript.js">
-  </script>
+  <script src="assets/myscript.js"></script>
 </html>

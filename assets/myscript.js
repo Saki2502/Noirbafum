@@ -156,8 +156,8 @@ function addProductHot() {
 }
 addProductHot();
 // getxy();
-document.getElementById("i-img").style.backgroundImage =
-  "url(assets/images/slide1.jpg)";
+// document.getElementById("i-img").style.backgroundImage =
+//   "url(assets/images/slide1.jpg)";
 
 function slideChange(i) {
   document.getElementById("stick" + iSlide).style.color =
@@ -171,10 +171,11 @@ function slideNumber(i) {
   document.getElementById("stick" + iSlide).style.color =
     "rgb(243,243,243,0.6)";
   iSlide = i;
-  document.getElementById("i-img").style.backgroundImage =
-    "url(assets/images/slide" + iSlide + ".jpg)";
+  document.getElementById("i-cover").src =
+    "assets/images/slide" + iSlide + ".jpg";
   document.getElementById("stick" + i).style.color = "rgb(54,54,54,0.6)";
 }
+
 function loopSlide() {
   slideChange(1);
   setTimeout(loopSlide, 5000);

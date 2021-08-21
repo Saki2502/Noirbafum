@@ -181,19 +181,23 @@ a {
   display: flex;
   justify-content: center;
 }
-#i-img {
+#i-img-box {
   position: relative;
-  width: 55%;
+  width: 90%;
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: 350px;
   /* background-image: url("assets/images/slide1.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
 }
+#i-cover{
+  width: fit-content;
+  height: 100%;
+}
 .i-left-right,
 #i-sticks {
-  width: 100%;
+  width: 90%;
   display: flex;
   position: absolute;
 }
