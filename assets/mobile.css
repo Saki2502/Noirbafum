@@ -13,10 +13,11 @@
   padding: 0px;
 }
 .c-product-box{
-  max-width: 160px;
+  max-width: 23%;
+  margin: 5px 0px;
 }
 .c-product-slide{
-  height: 200px !important;
+  height: 150px !important;
 }
 #i-searchbox span{
   display: none;
@@ -26,4 +27,8 @@
 }
 #i-img-box{
   max-height: 150px;
+}
+.c-content{
+  width: 100%;
+  margin: 0px;
 }

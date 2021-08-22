@@ -17,11 +17,12 @@
   display: none !important;
 }
 .c-product-box{
-  width: 200px !important;
+  width: 30%;
+  /* width: 200px !important; */
 }
 .c-product-slide{
   height: 250px;
-  width: 1500px;
+  /* width: 1500px; */
 }
 #i-log{
   display: none;

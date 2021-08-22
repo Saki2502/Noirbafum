@@ -113,6 +113,7 @@ $(function () {
 function addProductWoman() {
   var elm = document.getElementById("product_woman");
   for (i = 0; i < img_woman.length; i++) {
+    if(i==5) break;
     elm.innerHTML =
       elm.innerHTML +
       '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">NEW</div><img src=' +
@@ -128,6 +129,7 @@ addProductWoman();
 function addProductMan() {
   var elm = document.getElementById("product_man");
   for (i = 0; i < img_man.length; i++) {
+    if(i==5) break;
     elm.innerHTML =
       elm.innerHTML +
       '<div class="c-product-box"><div class="c-img-product"><img src=' +
@@ -143,6 +145,7 @@ addProductMan();
 function addProductHot() {
   var elm = document.getElementById("product_hot");
   for (i = 0; i < img_hot.length; i++) {
+    if(i==5) break;
     elm.innerHTML =
       elm.innerHTML +
       '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">HOT</div><img src=' +
