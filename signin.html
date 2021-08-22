@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/myscript.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#forgotpass").click(function () {
+          $("#form-forget").show();
+        });
+        $("button#close").click(function () {
+          $("#form-forget").hide();
+        });
+      });
+    </script>
     <meta charset="utf-8" />
     <title>Sign In - Noir Parfum</title>
-    <link
-      rel="shortcut icon"
-      href="assets/images/logo-header.png"
-    />
+    <link rel="shortcut icon" href="assets/images/logo-header.png" />
     <link rel="stylesheet" href="assets/signin-up.css" />
     <link
       rel="stylesheet"
@@ -15,7 +24,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Shop nước hoa Noir Parfum" />
     <meta name="author" content="Anh Quang & Tuyết Nhi" />
-    <link href="images/logo2_uLJ_icon.ico" rel="shortcut icon" />
     <script>
       function bground() {
         document.body.style.backgroundImage = "url(assets/images/nen.jpg)";
@@ -56,7 +64,7 @@
                             -->
             </div>
             <div class="create-forgot">
-              <a href="#">Forgot password?</a>
+              <a href="#form-forget" id="forgotpass">Forgot password?</a>
               <a class="register" href="signup.html" target="_parent"
                 >Register new account</a
               >
@@ -86,6 +94,18 @@
           </form>
         </div>
       </div>
+    </div>
+    <!--form quên mật khẩu-->
+    <div id="form-forget">
+      <div class="forget">
+        <form action="#" method="post">
+          <h4>Quên mật khẩu?</h4>
+          <p>Hãy để lại email chúng tôi sẽ gởi password</p>
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <button title="Close (ESC)" type="button" id="close">X</button>
     </div>
   </body>
 </html>

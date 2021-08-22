@@ -21,7 +21,6 @@ var img_hot = new Array();
 var price_hot = new Array();
 var name_hot = new Array();
 
-
 function addAnother_Woman(img, price, name) {
   img_woman.push(img);
   price_woman.push(price);
@@ -80,14 +79,14 @@ $(function () {
     if ($("html,body").scrollTop() > 80) {
       // $("this").scrollTop(100);
       $("#i-header").css({
-        "position": "fixed"
-        ,"top": "0"
-        ,"z-index": "1"
-        ,"height" : "60"
+        position: "fixed",
+        top: "0",
+        "z-index": "1",
+        height: "60",
         // ,"display":"none"
       });
       if (!isSideDown) {
-        $("#i-slogan").css("display","none");
+        $("#i-slogan").css("display", "none");
         $("#i-header").css("display", "none");
         isSideDown = true;
         $("#i-header").slideDown(500);
@@ -95,13 +94,13 @@ $(function () {
     } else if ($("html,body").scrollTop() == 0) {
       isSideDown = false;
       $("#i-header").css({
-        "position": "static"
+        position: "static",
         // ,"top":"0"
         // ,"z-index":"1"
-        ,"display": "flex"
-        ,"height" : "95"
+        display: "flex",
+        height: "95",
       });
-      $("#i-slogan").css("display","block");
+      $("#i-slogan").css("display", "block");
     }
   });
   for (i = 0; i < 10; i++) {
@@ -113,7 +112,7 @@ $(function () {
 function addProductWoman() {
   var elm = document.getElementById("product_woman");
   for (i = 0; i < img_woman.length; i++) {
-    if(i==5) break;
+    if (i == 5) break;
     elm.innerHTML =
       elm.innerHTML +
       '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">NEW</div><img src=' +
@@ -129,7 +128,7 @@ addProductWoman();
 function addProductMan() {
   var elm = document.getElementById("product_man");
   for (i = 0; i < img_man.length; i++) {
-    if(i==5) break;
+    if (i == 5) break;
     elm.innerHTML =
       elm.innerHTML +
       '<div class="c-product-box"><div class="c-img-product"><img src=' +
@@ -145,7 +144,7 @@ addProductMan();
 function addProductHot() {
   var elm = document.getElementById("product_hot");
   for (i = 0; i < img_hot.length; i++) {
-    if(i==5) break;
+    if (i == 5) break;
     elm.innerHTML =
       elm.innerHTML +
       '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">HOT</div><img src=' +
@@ -214,3 +213,12 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+//Log In form
+$(document).ready(function () {
+  $("#forgotpass").click(function () {
+    $("#form-forget").show();
+  });
+  $("button#close").click(function () {
+    $("#form-forget").hide();
+  });
+});

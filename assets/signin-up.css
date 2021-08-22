@@ -175,7 +175,7 @@ label.checkbox {
   margin-top: 6px;
   margin-bottom: 25px;
 }
-.checkbox > span{
+.checkbox > span {
   margin-left: 6px;
 }
 .accept-condition span {
@@ -227,4 +227,42 @@ label.checkbox {
     width: 100%;
     display: inline-block;
   }
+}
+/*quên pass*/
+#form-forget {
+  padding: 45px;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+.forget {
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  background-color: #F9CB9C;
+  line-height: 25px;
+  color: #111;
+  
+}
+/*nút x tắt form*/
+#close {
+  color: #fff;
+  background: none;
+}
+button#close {
+  overflow: visible;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  border: 0;
+  left: 148px;
+  top: 58px;
+  font-size: 25px;
 }
