@@ -1,4 +1,5 @@
 /* mobile 480 */
+
 #i-header img {
   display: none;
 }
@@ -15,10 +16,15 @@
 .c-product-box{
   max-width: 23%;
   margin: 5px 0px;
+  font-size: 0.8ch;
 }
 .c-product-slide{
   height: 150px !important;
 }
+/* .c-img-product+div{
+  font-size: 0.5ch;
+} */
+
 #i-searchbox span{
   display: none;
 }
@@ -27,6 +33,8 @@
 }
 #i-img-box{
   max-height: 130px;
+  width: 100% !important;
+  overflow: hidden;
 }
 .c-content{
   width: 100%;
