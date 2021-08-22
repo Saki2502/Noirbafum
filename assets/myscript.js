@@ -181,12 +181,12 @@ function loopSlide() {
   setTimeout(loopSlide, 5000);
 }
 loopSlide();
-function scrollSlide(i, str) {
-  var elmt = document.getElementById("slide_" + str);
-  elmt.scrollBy(i, 0);
-  // var x = elmt.scrollLeft;
-  // document.getElementById("t"+"est").innerHTML ="hello";
-}
+// function scrollSlide(i, str) {
+//   var elmt = document.getElementById("slide_" + str);
+//   elmt.scrollBy(i, 0);
+//   // var x = elmt.scrollLeft;
+//   // document.getElementById("t"+"est").innerHTML ="hello";
+// }
 
 /*footer*/
 window.scrollTo(0, 0);
