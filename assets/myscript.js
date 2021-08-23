@@ -203,3 +203,12 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+//Log In form
+$(document).ready(function () {
+  $("#forgotpass").click(function () {
+    $("#form-forget").show();
+  });
+  $("button#close").click(function () {
+    $("#form-forget").hide();
+  });
+});
