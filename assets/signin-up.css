@@ -230,14 +230,14 @@ label.checkbox {
 }
 /*quên pass*/
 #form-forget {
-  padding: 45px;
-  position: relative;
+  position: fixed;
   overflow: hidden;
   vertical-align: middle;
   background: transparent;
   width: 100%;
   height: 100%;
   display: none;
+  top: 25%;
 }
 .forget {
   width: 70%;
@@ -262,7 +262,7 @@ button#close {
   position: absolute;
   text-decoration: none;
   border: 0;
-  left: 148px;
-  top: 58px;
+  left: 112px;
+  top: 15px;
   font-size: 25px;
 }
