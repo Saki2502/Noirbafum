@@ -284,7 +284,7 @@ a {
   /* width: 2000px; */
   height: 300px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* border: solid 2px wheat; */
   align-items: center;
   flex-wrap: wrap;

@@ -17,7 +17,7 @@
   display: none !important;
 }
 .c-product-box{
-  width: 30%;
+  width: 30% !important;
   /* width: 200px !important; */
 }
 .c-product-slide{

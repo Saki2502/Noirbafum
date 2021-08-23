@@ -9,85 +9,93 @@
 //     elm.style.position = "static";
 //   }
 // }
-
+var product = new Array();
 var iSlide = 1;
-var img_woman = new Array();
-var price_woman = new Array();
-var name_woman = new Array();
-var img_man = new Array();
-var price_man = new Array();
-var name_man = new Array();
-var img_hot = new Array();
-var price_hot = new Array();
-var name_hot = new Array();
-
-
-function addAnother_Woman(img, price, name) {
-  img_woman.push(img);
-  price_woman.push(price);
-  name_woman.push(name);
+var newPro;
+function addProduct(img, name, price, infor, sex, company, hot) {
+  newPro = {
+    img: img,
+    name: name,
+    price: price,
+    infor: infor,
+    sex: sex,
+    company: company,
+    hot: hot,
+  };
+  product.push(newPro);
 }
-function addAnother_Man(img, price, name) {
-  img_man.push(img);
-  price_man.push(price);
-  name_man.push(name);
-}
-function addAnother_Hot(img, price, name) {
-  img_hot.push(img);
-  price_hot.push(price);
-  name_hot.push(name);
-}
-
-// noi them san pham
-function addProWoman() {
-  addAnother_Woman("assets/images/BlackOpium.jpg", 130, "Black Opium");
-  addAnother_Woman("assets/images/versace.jpg", 99, "Versace Bright Crystal");
-  addAnother_Woman("assets/images/si.jpg", 128, "Sì Eau de Parfum");
-  addAnother_Woman("assets/images/MissDior.jpg", 138, "Miss Dior Blooming");
-  addAnother_Woman("assets/images/lancome.jpg", 117, "Lancôme Trésor");
-  addAnother_Woman("assets/images/cocochanel.jpg", 145, "Coco Chanel");
-}
-addProWoman();
-function addProMan() {
-  addAnother_Man("assets/images/212.jpg", 104, "212 Men Carolina Herrera");
-  addAnother_Man("assets/images/paco.jpg", 100, "Phantom Eau de Toilette");
-  addAnother_Man("assets/images/gio.jpg", 195, "Acqua Di Gio Profumo");
-  addAnother_Man("assets/images/sauvage.jpg", 128, "Sauvage Eau de Parfum");
-  addAnother_Man("assets/images/bvlgariman.jpg", 113, "BVLGARI Man In Black");
-  addAnother_Man("assets/images/bleuchanel.jpg", 128, "Bleu de Chanel");
-}
-addProMan();
-function addProHot() {
-  addAnother_Hot(
-    "assets/images/540eau.jpg",
-    278,
-    "Maison Francis Kurkdjian Baccarat Rouge 540"
+//noi add san pham
+function addList() {
+  addProduct(
+    "assets/images/BlackOpium.jpg",
+    "Black Opium",
+    130,
+    "Thuong hang",
+    "male",
+    "chau au",
+    true
   );
-  addAnother_Hot(
-    "assets/images/goodgirl.jpg",
-    107,
-    "Very Good Girl Eau de Parfum"
+  addProduct(
+    "assets/images/versace.jpg",
+    "Versace Bright Crystal",
+    99,
+    "Thuong hang",
+    "male",
+    "chau au",
+    false
   );
-  addAnother_Hot("assets/images/tamdao.jpg", 161, "Diptyque Tam Dao");
-  addAnother_Hot("assets/images/doson.jpg", 161, "Diptyque Do Son");
-  addAnother_Hot("assets/images/replica.jpg", 135, "REPLICA Jazz Club");
-  addAnother_Hot("assets/images/repvibe.jpg", 135, "REPLICA Autumn Vibes");
+  addProduct(
+    "assets/images/212.jpg",
+    "212 Men Carolina Herrera",
+    104,
+    "Thuong hang",
+    "female",
+    "chau au",
+    false
+  );
+  addProduct(
+    "assets/images/paco.jpg",
+    "Phantom Eau de Toilette",
+    100,
+    "Thuong hang",
+    "female",
+    "chau au",
+    true
+  );
+  addProduct(
+    "assets/images/tamdao.jpg",
+    "Diptyque Tam Dao",
+    161,
+    "Thuong hang",
+    "male",
+    "chau au",
+    true
+  );
+  addProduct(
+    "assets/images/doson.jpg",
+    "Diptyque Do Son",
+    161,
+    "Thuong hang",
+    "female",
+    "chau au",
+    true
+  );
 }
-addProHot();
+addList();
 $(function () {
   var isSideDown = false;
   $(window).scroll(function () {
     if ($("html,body").scrollTop() > 80) {
       // $("this").scrollTop(100);
       $("#i-header").css({
-        "position": "fixed"
-        ,"top": "0"
-        ,"z-index": "1"
-        ,"height" : "60"
+        position: "fixed",
+        top: "0",
+        "z-index": "1",
+        height: "60",
         // ,"display":"none"
       });
       if (!isSideDown) {
-        $("#i-slogan").css("display","none");
+        $("#i-slogan").css("display", "none");
         $("#i-header").css("display", "none");
         isSideDown = true;
         $("#i-header").slideDown(500);
@@ -95,13 +103,13 @@ $(function () {
     } else if ($("html,body").scrollTop() == 0) {
       isSideDown = false;
       $("#i-header").css({
-        "position": "static"
+        position: "static",
         // ,"top":"0"
         // ,"z-index":"1"
-        ,"display": "flex"
-        ,"height" : "95"
+        display: "flex",
+        height: "95",
       });
-      $("#i-slogan").css("display","block");
+      $("#i-slogan").css("display", "block");
     }
   });
   for (i = 0; i < 10; i++) {
@@ -110,54 +118,35 @@ $(function () {
     );
   }
 });
-function addProductWoman() {
-  var elm = document.getElementById("product_woman");
-  for (i = 0; i < img_woman.length; i++) {
-    if(i==5) break;
-    elm.innerHTML =
-      elm.innerHTML +
-      '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">NEW</div><img src=' +
-      img_woman[i] +
-      ' alt="san pham" /></div><div><p class="c-name-product">' +
-      name_woman[i] +
-      '</p><p class="c-price-product">' +
-      price_woman[i] +
-      "<i><b>$</b></i></p></div></div>";
+
+function addProToScreen(){
+  var nWoman = 0,
+  elmWoman = document.getElementById("product_woman"),
+  nMan = 0,
+  elmMan = document.getElementById("product_man"),
+  nHot = 0,
+  elmHot = document.getElementById("product_hot"),
+  pieHtml;
+  for(i = 0; i < product.length; i++){
+    pieHtml = '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">NEW</div><img src=' +
+    product[i].img +
+    ' alt="san pham" /></div><div><p class="c-name-product">' +
+    product[i].name +
+    '</p><p class="c-price-product">' +
+    product[i].price +
+    "<i><b>$</b></i></p></div></div>";
+    if(nWoman<5 && product[i].sex=="male"){
+      elmWoman.innerHTML = elmWoman.innerHTML + pieHtml;
+    }
+    if(nMan<5 && product[i].sex=="female"){
+      elmMan.innerHTML = elmMan.innerHTML + pieHtml;
+    }
+    if(nHot<5 &&product[i].hot){
+      elmHot.innerHTML = elmHot.innerHTML + pieHtml;
+    }
   }
 }
-addProductWoman();
-function addProductMan() {
-  var elm = document.getElementById("product_man");
-  for (i = 0; i < img_man.length; i++) {
-    if(i==5) break;
-    elm.innerHTML =
-      elm.innerHTML +
-      '<div class="c-product-box"><div class="c-img-product"><img src=' +
-      img_man[i] +
-      ' alt="san pham" /></div><div><p class="c-name-product">' +
-      name_man[i] +
-      '</p><p class="c-price-product">' +
-      price_man[i] +
-      "<i><b>$</b></i></p></div></div>";
-  }
-}
-addProductMan();
-function addProductHot() {
-  var elm = document.getElementById("product_hot");
-  for (i = 0; i < img_hot.length; i++) {
-    if(i==5) break;
-    elm.innerHTML =
-      elm.innerHTML +
-      '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">HOT</div><img src=' +
-      img_hot[i] +
-      ' alt="san pham" /></div><div><p class="c-name-product">' +
-      name_hot[i] +
-      '</p><p class="c-price-product">' +
-      price_hot[i] +
-      "<i><b>$</b></i></p></div></div>";
-  }
-}
-addProductHot();
+addProToScreen();
 // getxy();
 // document.getElementById("i-img").style.backgroundImage =
 //   "url(assets/images/slide1.jpg)";
