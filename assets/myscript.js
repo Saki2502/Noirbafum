@@ -30,18 +30,45 @@ function addList() {
     "assets/images/BlackOpium.jpg",
     "Black Opium",
     130,
-    "Thuong hang",
+    "Key Notes: Black Coffee, White Flowers, Vanilla",
     "female",
-    "chau au",
+    "Yves Saint Laurent",
     true
   );
   addProduct(
     "assets/images/versace.jpg",
     "Versace Bright Crystal",
     99,
+    "Key Notes: Yuzu Lemon, Peony, Musk",
+    "female",
+    "Versace",
+    false
+  );
+  addProduct(
+    "assets/images/lancome.jpg",
+    "Lancôme Trésor",
+    130,
     "Thuong hang",
     "female",
-    "chau au",
+    "Lancôme",
+    false
+  );
+  addProduct(
+    "assets/images/cocochanel.jpg",
+    "Coco MadeMoiSelle",
+    145,
+    "Key Notes: Patchouli, Tonka Bean, Vanilla Absolute",
+    "female",
+    "Chanel",
+    false
+  );
+  addProduct(
+    "assets/images/MissDior.jpg",
+    "Miss Dior Blooming Bouquet",
+    145,
+    "Key Notes: Damascus Rose, Peony, White Musk",
+    "female",
+    "Dior",
     false
   );
   addProduct(
@@ -57,27 +84,72 @@ function addList() {
     "assets/images/paco.jpg",
     "Phantom Eau de Toilette",
     100,
-    "Thuong hang",
+    "Key Notes: Rhubarb, Lavender, Vetiver",
     "male",
-    "chau au",
+    "Paco Rabanne",
+    false
+  );
+  addProduct(
+    "assets/images/bleuchanel.jpg",
+    "Bleu De Chanel Eau de Parfum",
+    128,
+    "Key Notes: Citrus Accord, Labdanum, Sandalwood Cedar",
+    "male",
+    "Chanel",
+    false
+  );
+  addProduct(
+    "assets/images/sauvage.jpg",
+    "Sauvage Eau de Parfum",
+    128,
+    "Key Notes: Bergamot, Vanilla, Nutmeg",
+    "male",
+    "Dior",
+    false
+  );
+  addProduct(
+    "assets/images/bvlgariman.jpg",
+    "Man In Black",
+    113,
+    "Key Notes: Spicy Amber-Rum Accord, Tuberose-Iris-Leather Accord, Benzoin",
+    "male",
+    "BVLGARI",
+    false
+  );
+  addProduct(
+    "assets/images/540eau.jpg",
+    "Baccarat Rouge 540 Perfume",
+    380,
+    "Key Notes: Saffron, Jasmine, Amberwood, Ambergris, Fir Resin, Cedar",
+    "unisex",
+    "Maison Francis Kurkdjian",
     true
   );
   addProduct(
     "assets/images/tamdao.jpg",
     "Diptyque Tam Dao",
     161,
-    "Thuong hang",
-    "male",
-    "chau au",
+    "hoa cỏ - gỗ - xạ hương",
+    "unisex",
+    "DIPTYQUE",
     true
   );
   addProduct(
     "assets/images/doson.jpg",
     "Diptyque Do Son",
     161,
-    "Thuong hang",
-    "male",
-    "chau au",
+    "hoa cỏ",
+    "unisex",
+    "DIPTYQUE",
+    true
+  );
+  addProduct(
+    "assets/images/goodgirl.jpg",
+    "Very Good Girl Parfum",
+    132,
+    "Key Notes: Redcurrant, Rose, Vanilla",
+    "female",
+    "Carolina Herrera",
     true
   );
 }
