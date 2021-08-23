@@ -31,7 +31,7 @@ function addList() {
     "Black Opium",
     130,
     "Thuong hang",
-    "male",
+    "female",
     "chau au",
     true
   );
@@ -40,7 +40,7 @@ function addList() {
     "Versace Bright Crystal",
     99,
     "Thuong hang",
-    "male",
+    "female",
     "chau au",
     false
   );
@@ -49,7 +49,7 @@ function addList() {
     "212 Men Carolina Herrera",
     104,
     "Thuong hang",
-    "female",
+    "male",
     "chau au",
     false
   );
@@ -58,7 +58,7 @@ function addList() {
     "Phantom Eau de Toilette",
     100,
     "Thuong hang",
-    "female",
+    "male",
     "chau au",
     true
   );
@@ -76,7 +76,7 @@ function addList() {
     "Diptyque Do Son",
     161,
     "Thuong hang",
-    "female",
+    "male",
     "chau au",
     true
   );
@@ -142,10 +142,10 @@ function addProToScreen(){
     '</p><p class="c-price-product">' +
     product[i].price +
     "<i><b>$</b></i></p></div></div>";
-    if(nWoman<5 && product[i].sex=="male"){
+    if(nWoman<5 && product[i].sex=="female"){
       elmWoman.innerHTML = elmWoman.innerHTML + pieHtml;
     }
-    if(nMan<5 && product[i].sex=="female"){
+    if(nMan<5 && product[i].sex=="male"){
       elmMan.innerHTML = elmMan.innerHTML + pieHtml;
     }
     if(nHot<5 &&product[i].hot){
@@ -210,4 +210,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
-//Log In form
