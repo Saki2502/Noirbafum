@@ -197,7 +197,7 @@ function scrollTop() {
   } else {
     ontop.style.display = "none";
   }
-}
+};
 //scroll lên đầu
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
