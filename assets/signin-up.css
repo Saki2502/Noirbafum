@@ -234,10 +234,10 @@ label.checkbox {
   position: relative;
   overflow: hidden;
   vertical-align: middle;
-  display: inline-block;
   background: transparent;
   width: 100%;
   height: 100%;
+  display: none;
 }
 .forget {
   width: 70%;
