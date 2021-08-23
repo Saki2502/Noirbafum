@@ -117,6 +117,13 @@ $(function () {
       '<div class="c-pro-items"><div class="c-item-img"></div><div class="c-item-info"><div class="c-item-name">Tran dan</div><div class="c-item-price">300d</div></div></div>'
     );
   }
+    //Log In form
+  $("#forgotpass").click(function () {
+    $("#form-forget").show();
+  });
+  $("button#close").click(function () {
+    $("#form-forget").hide();
+  });
 });
 
 function addProToScreen(){
@@ -202,13 +209,5 @@ function scrollTop() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+};
 //Log In form
-$(document).ready(function () {
-  $("#forgotpass").click(function () {
-    $("#form-forget").show();
-  });
-  $("button#close").click(function () {
-    $("#form-forget").hide();
-  });
-});
