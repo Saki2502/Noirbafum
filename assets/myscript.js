@@ -30,18 +30,45 @@ function addList() {
     "assets/images/BlackOpium.jpg",
     "Black Opium",
     130,
-    "Thuong hang",
-    "male",
-    "chau au",
+    "Key Notes: Black Coffee, White Flowers, Vanilla",
+    "female",
+    "Yves Saint Laurent",
     true
   );
   addProduct(
     "assets/images/versace.jpg",
     "Versace Bright Crystal",
     99,
+    "Key Notes: Yuzu Lemon, Peony, Musk",
+    "female",
+    "Versace",
+    false
+  );
+  addProduct(
+    "assets/images/lancome.jpg",
+    "Lancôme Trésor",
+    130,
     "Thuong hang",
-    "male",
-    "chau au",
+    "female",
+    "Lancôme",
+    false
+  );
+  addProduct(
+    "assets/images/cocochanel.jpg",
+    "Coco MadeMoiSelle",
+    145,
+    "Key Notes: Patchouli, Tonka Bean, Vanilla Absolute",
+    "female",
+    "Chanel",
+    false
+  );
+  addProduct(
+    "assets/images/MissDior.jpg",
+    "Miss Dior Blooming Bouquet",
+    145,
+    "Key Notes: Damascus Rose, Peony, White Musk",
+    "female",
+    "Dior",
     false
   );
   addProduct(
@@ -49,7 +76,7 @@ function addList() {
     "212 Men Carolina Herrera",
     104,
     "Thuong hang",
-    "female",
+    "male",
     "chau au",
     false
   );
@@ -57,27 +84,72 @@ function addList() {
     "assets/images/paco.jpg",
     "Phantom Eau de Toilette",
     100,
-    "Thuong hang",
-    "female",
-    "chau au",
+    "Key Notes: Rhubarb, Lavender, Vetiver",
+    "male",
+    "Paco Rabanne",
+    false
+  );
+  addProduct(
+    "assets/images/bleuchanel.jpg",
+    "Bleu De Chanel Eau de Parfum",
+    128,
+    "Key Notes: Citrus Accord, Labdanum, Sandalwood Cedar",
+    "male",
+    "Chanel",
+    false
+  );
+  addProduct(
+    "assets/images/sauvage.jpg",
+    "Sauvage Eau de Parfum",
+    128,
+    "Key Notes: Bergamot, Vanilla, Nutmeg",
+    "male",
+    "Dior",
+    false
+  );
+  addProduct(
+    "assets/images/bvlgariman.jpg",
+    "Man In Black",
+    113,
+    "Key Notes: Spicy Amber-Rum Accord, Tuberose-Iris-Leather Accord, Benzoin",
+    "male",
+    "BVLGARI",
+    false
+  );
+  addProduct(
+    "assets/images/540eau.jpg",
+    "Baccarat Rouge 540 Perfume",
+    380,
+    "Key Notes: Saffron, Jasmine, Amberwood, Ambergris, Fir Resin, Cedar",
+    "unisex",
+    "Maison Francis Kurkdjian",
     true
   );
   addProduct(
     "assets/images/tamdao.jpg",
     "Diptyque Tam Dao",
     161,
-    "Thuong hang",
-    "both",
-    "chau au",
+    "hoa cỏ - gỗ - xạ hương",
+    "unisex",
+    "DIPTYQUE",
     true
   );
   addProduct(
     "assets/images/doson.jpg",
     "Diptyque Do Son",
     161,
-    "Thuong hang",
+    "hoa cỏ",
+    "unisex",
+    "DIPTYQUE",
+    true
+  );
+  addProduct(
+    "assets/images/goodgirl.jpg",
+    "Very Good Girl Parfum",
+    132,
+    "Key Notes: Redcurrant, Rose, Vanilla",
     "female",
-    "chau au",
+    "Carolina Herrera",
     true
   );
 }
@@ -142,11 +214,11 @@ function addProToScreen(){
     '</p><p class="c-price-product">' +
     product[i].price +
     "<i><b>$</b></i></p></div></div>";
-    if(nWoman<5 && product[i].sex=="male"){
+    if(nWoman<5 && product[i].sex=="female"){
       elmWoman.innerHTML = elmWoman.innerHTML + pieHtml;
       continue;
     }
-    if(nMan<5 && product[i].sex=="female"){
+    if(nMan<5 && product[i].sex=="male"){
       elmMan.innerHTML = elmMan.innerHTML + pieHtml;
       continue;
     }
@@ -212,4 +284,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
-//Log In form
