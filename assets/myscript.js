@@ -185,57 +185,69 @@ $(function () {
       $("#i-slogan").css("display", "block");
     }
   });
-  for(i = 0; i < product.length; i++){
-    if($("#"+product[i].company).checked){
+  for (i = 0; i < product.length; i++) {
+    if ($("#" + product[i].company).checked) {
       $(".c-list").append(
-        '<div class="c-pro-items"><div class="c-item-img"><img src=' 
-        +product[i].img +
-        ' alt="san pham" /></div><div class="c-item-info"><div class="c-item-name">'
-        +product[i].name+
-        '</div><div class="c-item-price">'
-        +product[i].price+
-        'd</div></div></div>'
+        '<div class="c-pro-items"><div class="c-item-img"><img src=' +
+          product[i].img +
+          ' alt="san pham" /></div><div class="c-item-info"><div class="c-item-name">' +
+          product[i].name +
+          '</div><div class="c-item-price">' +
+          product[i].price +
+          "d</div></div></div>"
       );
     }
   }
+
   for (i = 0; i < 10; i++) {
     $(".c-list").append(
       '<div class="c-pro-items"><div class="c-item-img"></div><div class="c-item-info"><div class="c-item-name">Tran dan</div><div class="c-item-price">300d</div></div></div>'
     );
   }
-    //Log In form
+  //Log In form
   $("#forgotpass").click(function () {
     $("#form-forget").show();
   });
   $("button#close").click(function () {
     $("#form-forget").hide();
   });
+  $(".se-company").hover(function(){
+    $(this).css("background-color", "#FFD597");
+    }, function(){
+    $(this).css("background-color", "unset");
+  });
+  $(".se-company").click(function () {
+    $(".choose").removeClass("choose");
+    $(this).children().prop("checked", true);
+    $(this).addClass("choose");
+  });
 });
-function addProToScreen(){
+function addProToScreen() {
   var nWoman = 0,
-  elmWoman = document.getElementById("product_woman"),
-  nMan = 0,
-  elmMan = document.getElementById("product_man"),
-  nHot = 0,
-  elmHot = document.getElementById("product_hot"),
-  pieHtml;
-  for(i = 0; i < product.length; i++){
-    pieHtml = '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">NEW</div><img src=' +
-    product[i].img +
-    ' alt="san pham" /></div><div><p class="c-name-product">' +
-    product[i].name +
-    '</p><p class="c-price-product">' +
-    product[i].price +
-    "<i><b>$</b></i></p></div></div>";
-    if(nWoman<5 && product[i].sex=="female"){
+    elmWoman = document.getElementById("product_woman"),
+    nMan = 0,
+    elmMan = document.getElementById("product_man"),
+    nHot = 0,
+    elmHot = document.getElementById("product_hot"),
+    pieHtml;
+  for (i = 0; i < product.length; i++) {
+    pieHtml =
+      '<div class="c-product-box"><div class="c-img-product"><div class="c-product-new animate__animated animate__jello">NEW</div><img src=' +
+      product[i].img +
+      ' alt="san pham" /></div><div><p class="c-name-product">' +
+      product[i].name +
+      '</p><p class="c-price-product">' +
+      product[i].price +
+      "<i><b>$</b></i></p></div></div>";
+    if (nWoman < 5 && product[i].sex == "female") {
       elmWoman.innerHTML = elmWoman.innerHTML + pieHtml;
       continue;
     }
-    if(nMan<5 && product[i].sex=="male"){
+    if (nMan < 5 && product[i].sex == "male") {
       elmMan.innerHTML = elmMan.innerHTML + pieHtml;
       continue;
     }
-    if(nHot<5 &&product[i].hot){
+    if (nHot < 5 && product[i].hot) {
       elmHot.innerHTML = elmHot.innerHTML + pieHtml;
     }
   }
@@ -291,9 +303,9 @@ function scrollTop() {
   } else {
     ontop.style.display = "none";
   }
-};
+}
 //scroll lên đầu
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-};
+}

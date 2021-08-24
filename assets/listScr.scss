@@ -23,12 +23,27 @@
             >ul{
                 width: 90%;
                 margin-left: 10%;
+                li{
+                    padding: 5px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+                // li:hover{
+                //     background-color: #FFD597;
+                //     // background-color: un;
+                // }
+                .choose{
+                    background-color: #FFD597 !important;
+                }
             }
         }
     }
     li{
         margin: 3px;
     }
+    // [type="radio"]{
+    //     display: none;
+    // }
     #i-price{
         width: 20%;
         border: none;

@@ -26,6 +26,14 @@
   width: 90%;
   margin-left: 10%;
 }
+.c-select > ul > li > ul li {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.c-select > ul > li > ul .choose {
+  background-color: #FFD597 !important;
+}
 .c-select li {
   margin: 3px;
 }
