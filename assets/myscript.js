@@ -67,7 +67,7 @@ function addList() {
     "Diptyque Tam Dao",
     161,
     "Thuong hang",
-    "male",
+    "both",
     "chau au",
     true
   );
@@ -144,9 +144,11 @@ function addProToScreen(){
     "<i><b>$</b></i></p></div></div>";
     if(nWoman<5 && product[i].sex=="male"){
       elmWoman.innerHTML = elmWoman.innerHTML + pieHtml;
+      continue;
     }
     if(nMan<5 && product[i].sex=="female"){
       elmMan.innerHTML = elmMan.innerHTML + pieHtml;
+      continue;
     }
     if(nHot<5 &&product[i].hot){
       elmHot.innerHTML = elmHot.innerHTML + pieHtml;
