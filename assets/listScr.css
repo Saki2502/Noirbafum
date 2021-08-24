@@ -12,7 +12,7 @@
 
 .c-select {
   width: 20%;
-  height: 300px;
+  height: fit-content;
   background-color: bisque;
   position: fixed;
   left: 0px;
@@ -60,7 +60,7 @@
 .c-list .c-pro-items {
   background-color: aliceblue;
   height: 250px;
-  width: 29%;
+  width: 22%;
   margin: 10px;
   border-radius: 5px;
   padding: 5px;

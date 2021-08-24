@@ -153,6 +153,7 @@ function addList() {
     true
   );
 }
+
 addList();
 $(function () {
   var isSideDown = false;
@@ -184,6 +185,19 @@ $(function () {
       $("#i-slogan").css("display", "block");
     }
   });
+  for(i = 0; i < product.length; i++){
+    if($("#"+product[i].company).checked){
+      $(".c-list").append(
+        '<div class="c-pro-items"><div class="c-item-img"><img src=' 
+        +product[i].img +
+        ' alt="san pham" /></div><div class="c-item-info"><div class="c-item-name">'
+        +product[i].name+
+        '</div><div class="c-item-price">'
+        +product[i].price+
+        'd</div></div></div>'
+      );
+    }
+  }
   for (i = 0; i < 10; i++) {
     $(".c-list").append(
       '<div class="c-pro-items"><div class="c-item-img"></div><div class="c-item-info"><div class="c-item-name">Tran dan</div><div class="c-item-price">300d</div></div></div>'
@@ -197,7 +211,6 @@ $(function () {
     $("#form-forget").hide();
   });
 });
-
 function addProToScreen(){
   var nWoman = 0,
   elmWoman = document.getElementById("product_woman"),
