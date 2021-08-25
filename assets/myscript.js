@@ -211,17 +211,39 @@ $(function () {
   $("button#close").click(function () {
     $("#form-forget").hide();
   });
-  $(".se-company").hover(function(){
+  $(".bar-select").children().hover(function(){
     $(this).css("background-color", "#FFD597");
     }, function(){
     $(this).css("background-color", "unset");
   });
-  $(".se-company").click(function () {
-    $(".choose").removeClass("choose");
+  $(".bar-select").children().click(function () {
+    var idPar = $(this).parent().attr('id');
+    $("#"+idPar+" .choose").removeClass("choose");
     $(this).children().prop("checked", true);
     $(this).addClass("choose");
   });
+  $('#i-submit').click(function () { 
+    $(".c-list").html('');
+    subProduct();
+  });
 });
+function subProduct(){
+  var compaName = $("#i-company > .choose").children().attr('id');
+  for (i = 0; i < product.length; i++) {
+    if(product[i].company==compaName)
+    {
+      $(".c-list").append(
+        '<div class="c-pro-items"><div class="c-item-img"><img src=' 
+        +product[i].img +
+        ' alt="san pham" /></div><div class="c-item-info"><div class="c-item-name">'
+        +product[i].name+
+        '</div><div class="c-item-price">'
+        +product[i].price+
+        'd</div></div></div>'
+      );
+    }
+  }
+}
 function addProToScreen() {
   var nWoman = 0,
     elmWoman = document.getElementById("product_woman"),

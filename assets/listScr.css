@@ -60,13 +60,11 @@
 .c-list {
   width: 60%;
   height: 100%;
-  background-color: cadetblue;
   margin-left: 20%;
   display: flex;
   flex-wrap: wrap;
 }
 .c-list .c-pro-items {
-  background-color: aliceblue;
   height: 250px;
   width: 22%;
   margin: 10px;
@@ -76,8 +74,11 @@
 .c-list .c-pro-items .c-item-img {
   width: 100%;
   height: 180px;
-  background-color: chartreuse;
   border-radius: 3px;
+  overflow: hidden;
+}
+.c-list .c-pro-items .c-item-img img {
+  width: 100%;
 }
 .c-list .c-pro-items .c-item-info {
   background-color: aquamarine;
