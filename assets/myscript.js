@@ -199,11 +199,6 @@ $(function () {
     }
   }
 
-  for (i = 0; i < 10; i++) {
-    $(".c-list").append(
-      '<div class="c-pro-items"><div class="c-item-img"></div><div class="c-item-info"><div class="c-item-name">Tran dan</div><div class="c-item-price">300d</div></div></div>'
-    );
-  }
   //Log In form
   $("#forgotpass").click(function () {
     $("#form-forget").show();
@@ -230,7 +225,7 @@ $(function () {
 function subProduct(){
   var compaName = $("#i-company > .choose").children().attr('id');
   for (i = 0; i < product.length; i++) {
-    if(product[i].company==compaName)
+    if(compaName=='all' || product[i].company==compaName)
     {
       $(".c-list").append(
         '<div class="c-pro-items"><div class="c-item-img"><img src=' 
