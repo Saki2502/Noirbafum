@@ -37,6 +37,9 @@
 .c-select li {
   margin: 3px;
 }
+.c-select [type=radio] {
+  display: none;
+}
 .c-select #i-price {
   width: 20%;
   border: none;
