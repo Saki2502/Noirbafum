@@ -97,6 +97,8 @@ input {
 .create-forgot .register {
   float: right;
 }
+
+/*Nút đăng nhập - đăng ký*/
 .login-button {
   width: 100%;
   white-space: nowrap;
@@ -140,6 +142,7 @@ input {
 hr {
   border: 1px solid #636363;
 }
+/*Đăng nhập bằng FB GG*/
 .form_socials {
   display: flex;
   justify-content: space-between;
@@ -244,7 +247,7 @@ label.checkbox {
   text-align: center;
   padding: 40px;
   position: relative;
-  background-color: #F9CB9C;
+  background-color: #f9cb9c;
   line-height: 25px;
   color: #111;
   top: 25%;

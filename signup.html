@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Sign Up - Noir Parfum</title>
-    <link
-      rel="shortcut icon"
-      href="assets/images/logo-header.png"
-    />
+    <link rel="shortcut icon" href="assets/images/logo-header.png" />
     <link rel="stylesheet" href="assets/signin-up.css" />
     <link
       rel="stylesheet"
@@ -50,6 +47,7 @@
                 name="email"
                 placeholder="Email"
                 autocomplete="off"
+                required
               />
             </div>
             <div class="group">
@@ -58,21 +56,28 @@
                 type="password"
                 name="password"
                 placeholder="Password"
+                pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d].{8,30}"
+                title="Minimum eight characters, at least one letter and one number"
                 required
               />
             </div>
-            <div class="group">
+            <!--<div class="group">
               <input
+                id="repsw"
                 class="form-input"
                 type="password"
                 name="password"
                 placeholder="Confirm Password"
                 required
+                onclick="pass()"
               />
             </div>
+            <div id="message">
+              <p>Mật khẩu phải có ít nhất 6 kí tự</p>
+            </div>-->
             <div class="accept-condition">
               <label class="checkbox">
-                <input type="checkbox" name="checkbox" checked />
+                <input type="checkbox" name="checkbox" checked required/>
                 <span>I Accept Terms &amp; Conditions</span>
               </label>
             </div>
@@ -83,5 +88,6 @@
         </div>
       </div>
     </div>
+    <script src="assets/myscript.js"></script>
   </body>
 </html>
