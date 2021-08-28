@@ -347,6 +347,10 @@ function pass() {
     return false;
   } else {
     alert("Pass is correct");
+  }
+  if (myPass == "" || rePass == "") {
+    button.style.cursor = "not-allowed";
+  } else {
     button.style.cursor = "pointer";
   }
 }
