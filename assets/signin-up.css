@@ -101,6 +101,7 @@ input {
 #message{
   color: red;
   margin-top: 5px;
+  font-size: 15px;
 }
 
 /*Nút đăng nhập - đăng ký*/

@@ -337,20 +337,14 @@ function topFunction() {
 function pass() {
   var myPass = document.getElementById("psw");
   var rePass = document.getElementById("repsw");
-  var button = document.getElementById("register");
-  if (myPass.length < 6 && rePass.length < 6) {
-    document.getElementById("message").innerHTML = "**Password phải có ít nhất 6 kí tự";
+  /*if (myPass.length < 6 && rePass.length < 6) {
+    document.getElementById("message").innerHTML = "Password phải có ít nhất 6 kí tự";
     return false;
-  }
-  else if (myPass != rePass) {
-    document.getElementById("message").innerHTML = "**Password không trùng nhau";
+  }*/
+  if (myPass != rePass) {
+    document.getElementById("message").innerHTML = "Password không trùng nhau";
     return false;
   } else {
     alert("Pass is correct");
-  }
-  if (myPass == "" || rePass == "") {
-    button.style.cursor = "not-allowed";
-  } else {
-    button.style.cursor = "pointer";
   }
 }
