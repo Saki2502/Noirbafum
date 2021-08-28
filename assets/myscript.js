@@ -342,7 +342,7 @@ function pass() {
     documentElement.getElementById("message").innerHTML = "**Password phải có ít nhất 6 kí tự";
     return false;
   }
-  else if (myPass.value != rePass.value) {
+  else if (myPass != rePass) {
     documentElement.getElementById("message").innerHTML = "**Password không trùng nhau";
     return false;
   } else {
