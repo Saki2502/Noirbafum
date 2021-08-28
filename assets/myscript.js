@@ -199,6 +199,29 @@ $(function () {
     }
   }
 
+  //Form đăng ký theo JQuery
+  $(document).ready(function () {
+    $("#register").click(function () {
+      var name = $("#username").val();
+      var email = $("#mail").val();
+      var password = $("#psw").val();
+      var cpassword = $("#repsw").val();
+      if (name == "" || email == "" || password == "" || cpassword == "") {
+        alert("Please fill all fields...!!!!!!");
+      } else if (password.length < 6) {
+        alert("Password should at least 6 character in length");
+      } else if (!password.match(cpassword)) {
+        alert("Your passwords don't match. Try again?");
+      } else {
+        $.post(function (data) {
+          if (data == "You have Successfully Registered") {
+            $("form")[0].reset();
+          }
+          alert(data);
+        });
+      }
+    });
+  });
   //Log In form
   $("#forgotpass").click(function () {
     $("#form-forget").show();
@@ -348,26 +371,3 @@ function pass() {
     alert("Pass is correct");
   }
 }
-//
-$(document).ready(function () {
-  $("#register").click(function () {
-    var name = $("#username").val();
-    var email = $("#mail").val();
-    var password = $("#psw").val();
-    var cpassword = $("#repsw").val();
-    if (name == "" || email == "" || password == "" || cpassword == "") {
-      alert("Please fill all fields...!!!!!!");
-    } else if (password.length < 6) {
-      alert("Password should at least 6 character in length");
-    } else if (!password.match(cpassword)) {
-      alert("Your passwords don't match. Try again?");
-    } else {
-      $.post(function (data) {
-        if (data == "You have Successfully Registered") {
-          $("form")[0].reset();
-        }
-        alert(data);
-      });
-    }
-  });
-});
