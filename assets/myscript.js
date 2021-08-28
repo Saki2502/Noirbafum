@@ -315,21 +315,38 @@ window.scroll({
   behavior: "smooth",
 });
 //Get a:
-ontop = document.getElementById("backtop");
+var onTop = document.getElementById("backtop");
+function scrollTop() {
+  if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+    onTop.style.display = "block";
+  } else {
+    onTop.style.display = "none";
+  }
+}
 //Kéo xuống 25px xuất hiện a
 window.onscroll = function () {
   scrollTop();
 };
-function scrollTop() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    ontop.style.display = "block";
-  } else {
-    ontop.style.display = "none";
-  }
-}
 //scroll lên đầu
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//Form đăng ký
+function pass() {
+  var myPass = document.getElementById("psw");
+  var rePass = document.getElementById("repsw");
+  var button = document.getElementById("register");
+  if (myPass.length < 6 && rePass.length < 6) {
+    documentElement.getElementById("message").innerHTML = "Password phải có ít nhất 6 kí tự";
+    return false;
+  }
+  else if (myPass.value != rePass.value) {
+    documentElement.getElementById("message").innerHTML = "Password không trùng nhau";
+    return false;
+  } else {
+    alert("Pass is correct");
+    button.style.cursor = "pointer";
+  }
+}

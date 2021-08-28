@@ -30,7 +30,7 @@
           <h3>SIGN UP</h3>
         </div>
         <div class="authen_form">
-          <form action="#" method="post">
+          <form onsubmit="return pass()" action="#" method="post">
             <div class="group">
               <input
                 class="form-input"
@@ -52,16 +52,18 @@
             </div>
             <div class="group">
               <input
+                id="psw"
                 class="form-input"
                 type="password"
                 name="password"
                 placeholder="Password"
-                pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d].{8,30}"
-                title="Minimum eight characters, at least one letter and one number"
+                pattern=".{6,30}"
+                title="Minimum six characters"
+                autocomplete="off"
                 required
               />
             </div>
-            <!--<div class="group">
+            <div class="group">
               <input
                 id="repsw"
                 class="form-input"
@@ -72,17 +74,18 @@
                 onclick="pass()"
               />
             </div>
-            <div id="message">
-              <p>Mật khẩu phải có ít nhất 6 kí tự</p>
-            </div>-->
+            <div>
+              <p id="message"></p>
+              <br />
+            </div>
             <div class="accept-condition">
               <label class="checkbox">
-                <input type="checkbox" name="checkbox" checked required/>
+                <input type="checkbox" name="checkbox" checked required />
                 <span>I Accept Terms &amp; Conditions</span>
               </label>
             </div>
             <div class="login-button">
-              <button class="btn btn2">Register</button>
+              <button id="register" class="btn btn2">Register</button>
             </div>
           </form>
         </div>

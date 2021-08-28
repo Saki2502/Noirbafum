@@ -97,6 +97,11 @@ input {
 .create-forgot .register {
   float: right;
 }
+/*Xử lý pass*/
+#message{
+  color: red;
+  margin-top: 5px;
+}
 
 /*Nút đăng nhập - đăng ký*/
 .login-button {
