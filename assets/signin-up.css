@@ -197,6 +197,7 @@ label.checkbox {
 .btn2 {
   cursor: not-allowed;
 }
+
 /*pc*/
 @media (min-width: 1024px) {
   .layout_container {
