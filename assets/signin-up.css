@@ -99,12 +99,14 @@ input {
 }
 /*Xử lý pass*/
 #message{
-  color: red;
+  width: 100%;
+  color: firebrick;
   margin-top: 5px;
-  font-size: 15px;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-/*Nút đăng nhập - đăng ký*/
+/*Nút đăng nhập - đký*/
 .login-button {
   width: 100%;
   white-space: nowrap;
@@ -132,6 +134,7 @@ input {
   justify-content: center;
   align-items: center;
 }
+/*button đăng nhập*/
 .btn1 {
   cursor: pointer;
 }
@@ -190,6 +193,7 @@ label.checkbox {
 .accept-condition span {
   position: absolute;
 }
+/*button đăng ký*/
 .btn2 {
   cursor: not-allowed;
 }
