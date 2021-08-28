@@ -339,11 +339,11 @@ function pass() {
   var rePass = document.getElementById("repsw");
   var button = document.getElementById("register");
   if (myPass.length < 6 && rePass.length < 6) {
-    documentElement.getElementById("message").innerHTML = "Password phải có ít nhất 6 kí tự";
+    documentElement.getElementById("message").innerHTML = "**Password phải có ít nhất 6 kí tự";
     return false;
   }
   else if (myPass.value != rePass.value) {
-    documentElement.getElementById("message").innerHTML = "Password không trùng nhau";
+    documentElement.getElementById("message").innerHTML = "**Password không trùng nhau";
     return false;
   } else {
     alert("Pass is correct");
