@@ -362,14 +362,12 @@ $(document).ready(function () {
     } else if (!password.match(cpassword)) {
       alert("Your passwords don't match. Try again?");
     } else {
-      $.post(
-        function (data) {
-          if (data == "You have Successfully Registered") {
-            $("form")[0].reset();
-          }
-          alert(data);
+      $.post(function (data) {
+        if (data == "You have Successfully Registered") {
+          $("form")[0].reset();
         }
-      );
+        alert(data);
+      });
     }
   });
 });
