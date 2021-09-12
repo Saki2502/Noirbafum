@@ -1,0 +1,9 @@
+#top{
+    height: 2em;
+    width: 1000px;
+    background-color: aquamarine;
+    margin: auto;
+}
+#top span{
+    padding: 0 100px;
+}
